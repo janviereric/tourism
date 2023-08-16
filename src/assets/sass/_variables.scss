@@ -1,0 +1,30 @@
+:root {
+  // main color
+  --primary: #2e86de;
+  --secondary: #54a0ff;
+  --tertiary: #48dbfb;
+
+  // text color
+  --light: #f5f6fa;
+  --medium: #2d98da;
+  --dark: #333;
+
+  // utils => button, border, words etc
+  --success: #05c46b;
+  --danger: #ea2027;
+  --info: #3867d6;
+  --warning: #fbc531;
+
+  // utils => border, words etc
+  --accent: #3c40c6;
+  --divider: #ecf0f1;
+
+  // font-family
+  --basic: "Mulish", sans-serif;
+  --default: "Roboto", sans-serif;
+  --logo: "Roboto Condensed", sans-serif;
+
+  // shadow
+  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}

@@ -1,0 +1,45 @@
+:root {
+  font-size: 62.5%; // font-size = 10px
+}
+
+body {
+  font-size: 1.6rem; // 1rem = 10px
+  color: var(--dark);
+  font-family: var(--basic);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+}
