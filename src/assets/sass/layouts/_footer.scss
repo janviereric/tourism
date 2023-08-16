@@ -1,0 +1,27 @@
+footer {
+  grid-area: footer;
+  padding: 2rem;
+  height: 8rem;
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+img {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: -0.1rem;
+}
+
+.j {
+  font-family: var(--logo);
+  color: var(--danger);
+}
+
+.e {
+  font-family: var(--logo);
+  color: var(--danger);
+}

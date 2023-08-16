@@ -9,47 +9,4 @@
 // layouts
 @use "./layouts/body" as *;
 @use "./layouts/header" as *;
-
-main {
-  grid-area: content;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--danger);
-  color: var(--light);
-  a {
-    color: var(--light);
-  }
-}
-
-/* footer start */
-footer {
-  grid-area: footer;
-  padding: 2rem;
-  height: 8rem;
-  background-color: var(--primary);
-  color: var(--light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-img {
-  height: 2rem;
-  width: 2rem;
-  margin-bottom: -0.1rem;
-}
-
-.j {
-  font-family: var(--logo);
-  color: var(--danger);
-}
-
-.e {
-  font-family: var(--logo);
-  color: var(--danger);
-}
-/* footer end */
+@use "./layouts/footer" as *;
