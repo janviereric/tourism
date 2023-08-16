@@ -8,14 +8,7 @@
 
 // layouts
 @use "./layouts/body" as *;
-
-header {
-  grid-area: header;
-  background: var(--success);
-  padding: 2rem;
-  color: var(--light);
-  font-weight: bold;
-}
+@use "./layouts/header" as *;
 
 main {
   grid-area: content;
