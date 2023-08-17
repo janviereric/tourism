@@ -28,18 +28,99 @@
       </header>
       <main>
         <form>
-          <h2 class="title-underline">Ajouter une image</h2>
-          <div class="form-group">
-            <label>Lieu</label>
-            <input type="text" name="author" />
-          </div>
+          <h2 class="title-underline">Ajouter une Photo</h2>
           <div class="form-group">
             <label>Categorie</label>
             <input type="text" name="category" />
           </div>
           <div class="form-group">
-            <label>Image</label>
-            <input type="file" name="image" />
+            <label>Photo</label>
+            <input type="file" name="photo" />
+          </div>
+          <div class="form-group">
+            <label for="pays">Pays</label>
+            <select name="country" id="pays">
+              <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="spain">Espagne</option>
+                <option value="italy">Italie</option>
+                <option value="germany">Allemagne</option>
+                <option value="goldfish">Royaume-Uni</option>
+                <option value="austria">Autriche</option>
+                <option value="sweden">Suède</option>
+                <option value="norway">Norvège</option>
+                <option value="greece">Grèce</option>
+                <option value="netherlands">Pays-bas</option>
+                <option value="poland">Pologne</option>
+                <option value="portugal">Portugal</option>
+              </optgroup>
+              <optgroup label="Afrique">
+                <option value="angola">Angola</option>
+                <option value="congo-rdc">Congo (RDC)</option>
+                <option value="congo">Congo</option>
+                <option value="cameroon">Cameroun</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="ethiopia">Éthiopie</option>
+                <option value="egypt">Égypte</option>
+                <option value="morocco">Maroc</option>
+                <option value="tunisia">Tunisie</option>
+                <option value="algeria">Algerie</option>
+                <option value="senegal">Sénégal</option>
+                <option value="madagascar">Madagascar</option>
+              </optgroup>
+              <optgroup label="Asie">
+                <option value="israel">Israël</option>
+                <option value="japan">Japon</option>
+                <option value="thailand">Thaïlande</option>
+                <option value="china">Chine</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="philippines">Philippines</option>
+                <option value="burma">Birmanie</option>
+                <option value="singapore">Singapour</option>
+                <option value="taîwan">Taïwan</option>
+                <option value="india">Inde</option>
+                <option value="malaysia">Malaisie</option>
+                <option value="cambodia">Cambodge</option>
+              </optgroup>
+              <optgroup label="Amerique">
+                <option value="brazil">Brésil</option>
+                <option value="united-states">États-Unis</option>
+                <option value="mexico">Mexique</option>
+                <option value="canada">Canada</option>
+                <option value="saint-lucia">Sainte-Lucie</option>
+                <option value="dominican-republic">
+                  République dominicaine
+                </option>
+                <option value="cuba">Cuba</option>
+                <option value="jamaica">Jamaïque</option>
+                <option value="argentina">Argentine</option>
+                <option value="guadeloupe">Guadeloupe</option>
+                <option value="sint-maarten">Saint-Martin</option>
+                <option value="haiti">Haïti</option>
+              </optgroup>
+              <optgroup label="Océanie">
+                <option value="indonesia">
+                  Indonésie (Asie - Transcontinental)
+                </option>
+                <option value="australie">Australie</option>
+                <option value="new-zealand">Nouvelle-Zélande</option>
+                <option value="solomon">Salomon</option>
+                <option value="marshall">Marshall</option>
+                <option value="french-polynesia">Polynésie française</option>
+                <option value="papua-new-guinea">
+                  Papouasie-Nouvelle-Guinée
+                </option>
+                <option value="northern-marianas">Mariannes du Nord</option>
+                <option value="fiji">Fidji</option>
+                <option value="guam">Guam</option>
+                <option value="tonga">Tonga</option>
+                <option value="cook-islands">Îles Cook</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Lieu</label>
+            <input type="text" name="place" />
           </div>
           <div class="form-group">
             <label>Description</label>
