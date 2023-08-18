@@ -11,6 +11,11 @@
       rel="stylesheet"
     />
     <!-- font-family end -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/images/janviereric.jpg"
+    />
     <title>Tourism-Formulaire</title>
   </head>
   <body>
@@ -33,9 +38,10 @@
             <label>Categorie</label>
             <input type="text" name="category" />
           </div>
-          <div class="form-group">
-            <label>Photo</label>
-            <input type="file" name="photo" />
+          <div class="form-picture">
+            <p>Photo</p>
+            <label for="input-picture" id="text-picture"></label>
+            <input id="input-picture" type="file" name="picture" required />
           </div>
           <div class="form-group">
             <label for="pays">Pays</label>
@@ -126,6 +132,7 @@
             <label>Description</label>
             <textarea name="content"></textarea>
           </div>
+          <ul class="text-error" id="errors"></ul>
           <div class="form-button-container">
             <button class="button button-secondary">Annuler</button>
             <button class="button button-primary">Ajouter</button>

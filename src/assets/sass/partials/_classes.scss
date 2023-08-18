@@ -26,3 +26,18 @@
     color: var(--light);
   }
 }
+
+.text {
+  &-valid {
+    color: var(--success);
+    font-weight: bold;
+  }
+  &-error {
+    color: var(--danger);
+    font-weight: bold;
+  }
+  &-detail {
+    color: var(--info);
+    font-weight: bold;
+  }
+}
