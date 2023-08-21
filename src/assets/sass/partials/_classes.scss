@@ -18,12 +18,14 @@
     transition: box-shadow 0.2s;
   }
   &-primary {
-    background: var(--success);
+    background: var(--primary);
+    border: 0.2rem solid var(--primary);
     color: var(--light);
   }
   &-secondary {
-    background: var(--danger);
-    color: var(--light);
+    background: var(--light);
+    border: 0.2rem solid var(--primary);
+    color: var(--primary);
   }
 }
 

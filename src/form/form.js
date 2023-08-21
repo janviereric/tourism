@@ -9,9 +9,20 @@ form.addEventListener("submit", async (event) => {
   const formData = new FormData(form);
   const photo = Object.fromEntries(formData.entries());
   if (formIsValid(photo)) {
-    const json = JSON.stringify(photo);
-    // fetch
-    console.log(json);
+    try {
+      const json = JSON.stringify(photo);
+      const response = await fetch("https://restapi.fr/api/photos", {
+        method: "POST",
+        body: json,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const body = await response.json();
+      console.log(body);
+    } catch (error) {
+      console.error("error : ", error);
+    }
   }
 });
 
@@ -37,6 +48,8 @@ const formIsValid = (photo) => {
     setTimeout(() => {
       textInfoPicture.innerHTML = "";
     }, 5000);
+  } else {
+    textInfoPicture.innerHTML = "";
   }
 
   if (
@@ -47,6 +60,8 @@ const formIsValid = (photo) => {
     setTimeout(() => {
       textInfoCategory.innerHTML = "";
     }, 5000);
+  } else {
+    textInfoCategory.innerHTML = "";
   }
 
   if (
@@ -58,6 +73,8 @@ const formIsValid = (photo) => {
     setTimeout(() => {
       textInfoCountry.innerHTML = "";
     }, 5000);
+  } else {
+    textInfoCountry.innerHTML = "";
   }
 
   if (
@@ -69,6 +86,8 @@ const formIsValid = (photo) => {
     setTimeout(() => {
       textInfoPlace.innerHTML = "";
     }, 5000);
+  } else {
+    textInfoPlace.innerHTML = "";
   }
 
   if (
@@ -79,6 +98,8 @@ const formIsValid = (photo) => {
     setTimeout(() => {
       textInfoContent.innerHTML = "";
     }, 5000);
+  } else {
+    textInfoContent.innerHTML = "";
   }
 
   const textPhotoColor = document.querySelector("#text-photo-color");
@@ -132,6 +153,10 @@ const formIsValid = (photo) => {
       textPlaceStar.classList.remove("text-danger");
       textContentStar.innerHTML = "";
       textContentStar.classList.remove("text-danger");
-    }, 2000);
+    }, 5000);
+    return false;
+  } else {
+    textInfo.innerHTML = "";
+    return true;
   }
 };
