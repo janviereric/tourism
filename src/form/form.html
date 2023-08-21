@@ -34,18 +34,32 @@
       <main>
         <form>
           <h2 class="title-underline">Ajouter une Photo</h2>
-          <div class="form-group">
-            <label>Categorie</label>
-            <input type="text" name="category" />
-          </div>
           <div class="form-picture">
-            <p>Photo</p>
+            <p>
+              <span id="text-photo-color">Photo</span
+              ><span id="text-photo-star"></span>
+            </p>
             <label for="input-picture" id="text-picture"></label>
-            <input id="input-picture" type="file" name="picture" required />
+            <input id="input-picture" type="file" name="picture" /><span
+              id="name-picture"
+            ></span>
+            <small id="text-info-picture"></small>
           </div>
           <div class="form-group">
-            <label for="pays">Pays</label>
+            <label
+              ><span id="text-category-color">Categorie</span
+              ><span id="text-category-star"></span
+            ></label>
+            <input type="text" name="category" />
+            <small id="text-info-category"></small>
+          </div>
+          <div class="form-group">
+            <label for="pays"
+              ><span id="text-country-color">Pays</span
+              ><span id="text-country-star"></span
+            ></label>
             <select name="country" id="pays">
+              <option value="">Selectionner un pays</option>
               <optgroup label="Europe">
                 <option value="france">France</option>
                 <option value="spain">Espagne</option>
@@ -123,16 +137,25 @@
                 <option value="cook-islands">Îles Cook</option>
               </optgroup>
             </select>
+            <small id="text-info-country"></small>
           </div>
           <div class="form-group">
-            <label>Lieu</label>
+            <label
+              ><span id="text-place-color">Lieu</span
+              ><span id="text-place-star"></span
+            ></label>
             <input type="text" name="place" />
+            <small id="text-info-place"></small>
           </div>
           <div class="form-group">
-            <label>Description</label>
+            <label
+              ><span id="text-content-color">Description</span
+              ><span id="text-content-star"></span
+            ></label>
             <textarea name="content"></textarea>
+            <small id="text-info-content"></small>
           </div>
-          <ul class="text-error" id="errors"></ul>
+          <small id="text-info"></small>
           <div class="form-button-container">
             <button class="button button-secondary">Annuler</button>
             <button class="button button-primary">Ajouter</button>

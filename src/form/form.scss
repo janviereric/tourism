@@ -15,37 +15,8 @@ main {
       text-align: center;
       margin-bottom: 5rem;
     }
-    .form-group {
-      margin-bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-      label {
-        font-size: 1.8rem;
-        color: var(--dark);
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-      select {
-        height: 4rem;
-      }
-      input,
-      select,
-      textarea {
-        border: 0.1rem solid var(--divider);
-        padding: 1rem;
-        outline: none;
-        resize: none;
-        border-radius: 0.3rem;
-        &:focus {
-          border-color: var(--primary);
-        }
-      }
-      textarea {
-        min-height: 20rem;
-      }
-    }
     .form-picture {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
       display: flex;
       flex-direction: column;
       p {
@@ -60,12 +31,71 @@ main {
         font-size: 1.2rem;
         height: 4rem;
         display: inline-block;
-        padding: 1rem 1rem;
-        cursor: pointer;
       }
       input[type="file"] {
         margin-top: -3rem;
+      }
+      #input-picture {
+        opacity: 0%;
+      }
+      #name-picture {
+        position: absolute;
+        bottom: 45.5rem;
         margin-left: 1rem;
+        font-size: 1.2rem;
+        color: var(--info);
+        font-weight: bold;
+      }
+    }
+    .form-group {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.8rem;
+        color: var(--dark);
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+      select {
+        height: 4rem;
+      }
+      input {
+        border: 0.1rem solid var(--divider);
+        padding: 1rem;
+        outline: none;
+        border-radius: 0.3rem;
+        cursor: default;
+        &:focus {
+          border-color: var(--primary);
+        }
+      }
+      textarea {
+        border: 0.1rem solid var(--divider);
+        padding: 1rem;
+        outline: none;
+        resize: none;
+        border-radius: 0.3rem;
+        cursor: default;
+        &:focus {
+          border-color: var(--primary);
+        }
+      }
+      select {
+        height: 4.5rem;
+        font-size: 1.4rem;
+        border: 0.1rem solid var(--divider);
+        padding: 0.5rem;
+        outline: none;
+        border-radius: 0.3rem;
+        font-family: var(--basic);
+        font-weight: bold;
+        &:focus {
+          border-color: var(--primary);
+        }
+      }
+      textarea {
+        min-height: 20rem;
       }
     }
     .form-button-container {
@@ -77,4 +107,40 @@ main {
       }
     }
   }
+}
+
+#text-info-category {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+#text-info-picture {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+#text-info-country {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+#text-info-place {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+#text-info-content {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+#text-info {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.text-danger {
+  color: var(--danger);
 }
