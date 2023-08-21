@@ -15,38 +15,6 @@ main {
       text-align: center;
       margin-bottom: 5rem;
     }
-    .form-picture {
-      margin-bottom: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      p {
-        font-size: 1.8rem;
-        color: var(--dark);
-        font-weight: 700;
-        margin-bottom: 1rem;
-      }
-      label {
-        border: 0.1rem solid var(--divider);
-        border-radius: 0.3rem;
-        font-size: 1.2rem;
-        height: 4rem;
-        display: inline-block;
-      }
-      input[type="file"] {
-        margin-top: -3rem;
-      }
-      #input-picture {
-        opacity: 0%;
-      }
-      #name-picture {
-        position: absolute;
-        bottom: 45.5rem;
-        margin-left: 1rem;
-        font-size: 1.2rem;
-        color: var(--info);
-        font-weight: bold;
-      }
-    }
     .form-group {
       margin-bottom: 2rem;
       display: flex;
@@ -89,13 +57,32 @@ main {
         outline: none;
         border-radius: 0.3rem;
         font-family: var(--basic);
-        font-weight: bold;
         &:focus {
           border-color: var(--primary);
         }
       }
       textarea {
         min-height: 20rem;
+      }
+    }
+    .form-category {
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      .container-name-category {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        border: 0.1rem solid var(--divider);
+        padding: 1rem;
+        outline: none;
+        border-radius: 0.3rem;
+        cursor: default;
+        &:focus {
+          border-color: var(--primary);
+        }
       }
     }
     .form-button-container {
@@ -115,21 +102,26 @@ main {
   font-weight: 700;
   margin-top: 0.5rem;
 }
+
+.form-title-category {
+  font-size: 1.8rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 #text-info-picture {
   color: var(--danger);
   font-weight: 700;
   margin-top: 1.5rem;
 }
-#text-info-country {
+
+#text-info-photographer {
   color: var(--danger);
   font-weight: 700;
   margin-top: 0.5rem;
 }
-#text-info-place {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: 0.5rem;
-}
+
 #text-info-content {
   color: var(--danger);
   font-weight: 700;

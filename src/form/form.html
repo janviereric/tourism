@@ -34,120 +34,91 @@
       <main>
         <form>
           <h2 class="title-underline">Ajouter une Photo</h2>
-          <div class="form-picture">
-            <p>
-              <span id="text-photo-color">Photo</span
-              ><span id="text-photo-star"></span>
-            </p>
-            <label for="input-picture" id="text-picture"></label>
-            <input id="input-picture" type="file" name="picture" /><span
-              id="name-picture"
-            ></span>
-            <small id="text-info-picture"></small>
-          </div>
-          <div class="form-group">
-            <label
-              ><span id="text-category-color">Categorie</span
-              ><span id="text-category-star"></span
+          <div class="form-group form-picture">
+            <label for="picture"
+              ><span id="text-picture-color">Photo</span
+              ><span id="text-picture-star"></span
             ></label>
-            <input type="text" name="category" />
-            <small id="text-info-category"></small>
-          </div>
-          <div class="form-group">
-            <label for="pays"
-              ><span id="text-country-color">Pays</span
-              ><span id="text-country-star"></span
-            ></label>
-            <select name="country" id="pays">
-              <option value="">Selectionner un pays</option>
-              <optgroup label="Europe">
-                <option value="france">France</option>
-                <option value="spain">Espagne</option>
-                <option value="italy">Italie</option>
-                <option value="germany">Allemagne</option>
-                <option value="goldfish">Royaume-Uni</option>
-                <option value="austria">Autriche</option>
-                <option value="sweden">Suède</option>
-                <option value="norway">Norvège</option>
-                <option value="greece">Grèce</option>
-                <option value="netherlands">Pays-bas</option>
-                <option value="poland">Pologne</option>
-                <option value="portugal">Portugal</option>
+            <select name="picture" id="picture">
+              <option value="">Selectionner une photo</option>
+              <optgroup label="Village">
+                <option value="gordes">Gordes</option>
+                <option value="shirakawa-go">Shirakawa-go</option>
+                <option value="giethoorn">Giethoorn</option>
               </optgroup>
-              <optgroup label="Afrique">
-                <option value="angola">Angola</option>
-                <option value="congo-rdc">Congo (RDC)</option>
-                <option value="congo">Congo</option>
-                <option value="cameroon">Cameroun</option>
-                <option value="nigeria">Nigeria</option>
-                <option value="ethiopia">Éthiopie</option>
-                <option value="egypt">Égypte</option>
-                <option value="morocco">Maroc</option>
-                <option value="tunisia">Tunisie</option>
-                <option value="algeria">Algerie</option>
-                <option value="senegal">Sénégal</option>
-                <option value="madagascar">Madagascar</option>
+              <optgroup label="Rivière">
+                <option value="volga">Fleuve Volga</option>
+                <option value="lir">Li</option>
+                <option value="loire">Loire</option>
               </optgroup>
-              <optgroup label="Asie">
-                <option value="israel">Israël</option>
-                <option value="japan">Japon</option>
-                <option value="thailand">Thaïlande</option>
-                <option value="china">Chine</option>
-                <option value="vietnam">Vietnam</option>
-                <option value="philippines">Philippines</option>
-                <option value="burma">Birmanie</option>
-                <option value="singapore">Singapour</option>
-                <option value="taîwan">Taïwan</option>
-                <option value="india">Inde</option>
-                <option value="malaysia">Malaisie</option>
-                <option value="cambodia">Cambodge</option>
+              <optgroup label="Animaux">
+                <option value="tiger">Le Tigre</option>
+                <option value="dolphin">Le Dauphin</option>
+                <option value="hawk">L'Aigel'</option>
               </optgroup>
-              <optgroup label="Amerique">
-                <option value="brazil">Brésil</option>
-                <option value="united-states">États-Unis</option>
-                <option value="mexico">Mexique</option>
-                <option value="canada">Canada</option>
-                <option value="saint-lucia">Sainte-Lucie</option>
-                <option value="dominican-republic">
-                  République dominicaine
-                </option>
-                <option value="cuba">Cuba</option>
-                <option value="jamaica">Jamaïque</option>
-                <option value="argentina">Argentine</option>
-                <option value="guadeloupe">Guadeloupe</option>
-                <option value="sint-maarten">Saint-Martin</option>
-                <option value="haiti">Haïti</option>
-              </optgroup>
-              <optgroup label="Océanie">
-                <option value="indonesia">
-                  Indonésie (Asie - Transcontinental)
-                </option>
-                <option value="australie">Australie</option>
-                <option value="new-zealand">Nouvelle-Zélande</option>
-                <option value="solomon">Salomon</option>
-                <option value="marshall">Marshall</option>
-                <option value="french-polynesia">Polynésie française</option>
-                <option value="papua-new-guinea">
-                  Papouasie-Nouvelle-Guinée
-                </option>
-                <option value="northern-marianas">Mariannes du Nord</option>
-                <option value="fiji">Fidji</option>
-                <option value="guam">Guam</option>
-                <option value="tonga">Tonga</option>
-                <option value="cook-islands">Îles Cook</option>
+              <optgroup label="Forêts">
+                <option value="laponie">La Laponie</option>
+                <option value="plitvice">Le Plitvice</option>
+                <option value="cèdre">Le Cèdre</option>
               </optgroup>
             </select>
-            <small id="text-info-country"></small>
+            <small id="text-info-picture"></small>
           </div>
-          <div class="form-group">
+          <div class="form-category">
             <label
-              ><span id="text-place-color">Lieu</span
-              ><span id="text-place-star"></span
+              ><span id="text-category-color" class="form-title-category"
+                >Categorie</span
+              ><span id="text-category-star"></span
             ></label>
-            <input type="text" name="place" />
-            <small id="text-info-place"></small>
+            <div class="container-name-category">
+              <div>
+                <input
+                  type="radio"
+                  id="novice"
+                  name="category"
+                  value="novice"
+                />
+                <label for="novice">Débutant</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="intermediate"
+                  name="category"
+                  value="intermediate"
+                />
+                <label for="intermediate">Intermediaire</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="professional"
+                  name="category"
+                  value="professional"
+                />
+                <label for="professional">Professionnel</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="expert"
+                  name="category"
+                  value="expert"
+                />
+                <label for="expert">Expert</label>
+              </div>
+            </div>
+            <small id="text-info-category"></small>
           </div>
-          <div class="form-group">
+          <div class="form-group form-photographer">
+            <label
+              ><span id="text-photographer-color">Photographe</span
+              ><span id="text-photographer-star"></span
+            ></label>
+            <input type="text" name="photographer" />
+            <small id="text-info-photographer"></small>
+          </div>
+          <div class="form-group form-content">
             <label
               ><span id="text-content-color">Description</span
               ><span id="text-content-star"></span
