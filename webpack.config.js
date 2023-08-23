@@ -35,20 +35,36 @@ module.exports = {
           to: "assets/images/[name][ext]",
         },
         {
-          from: "./src/assets/images/home-photos/animaux/*",
-          to: "assets/images/home-photos/animaux/[name][ext]",
+          from: "./src/assets/images/home-photos/home-animaux/*",
+          to: "assets/images/home-photos/home-animaux/[name][ext]",
         },
         {
-          from: "./src/assets/images/home-photos/iles/*",
-          to: "assets/images/home-photos/iles/[name][ext]",
+          from: "./src/assets/images/home-photos/home-iles/*",
+          to: "assets/images/home-photos/home-iles/[name][ext]",
         },
         {
-          from: "./src/assets/images/home-photos/natures/*",
-          to: "assets/images/home-photos/natures/[name][ext]",
+          from: "./src/assets/images/home-photos/home-natures/*",
+          to: "assets/images/home-photos/home-natures/[name][ext]",
         },
         {
-          from: "./src/assets/images/home-photos/neutres/*",
-          to: "assets/images/home-photos/neutres/[name][ext]",
+          from: "./src/assets/images/home-photos/home-neutres/*",
+          to: "assets/images/home-photos/home-neutres/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-photos/form-animaux/*",
+          to: "assets/images/form-photos/form-animaux/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-photos/form-iles/*",
+          to: "assets/images/form-photos/form-iles/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-photos/form-natures/*",
+          to: "assets/images/form-photos/form-natures/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-photos/form-neutres/*",
+          to: "assets/images/form-photos/form-neutres/[name][ext]",
         },
       ],
     }),

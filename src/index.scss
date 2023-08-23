@@ -15,9 +15,9 @@ main {
   align-items: center;
 }
 
-.photo {
+.home-photo-container,
+.form-photp-container {
   margin: 1rem;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
