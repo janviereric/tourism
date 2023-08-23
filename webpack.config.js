@@ -34,6 +34,22 @@ module.exports = {
           from: "./src/assets/images/*",
           to: "assets/images/[name][ext]",
         },
+        {
+          from: "./src/assets/images/home-photos/animaux/*",
+          to: "assets/images/home-photos/animaux/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-photos/iles/*",
+          to: "assets/images/home-photos/iles/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-photos/natures/*",
+          to: "assets/images/home-photos/natures/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-photos/neutres/*",
+          to: "assets/images/home-photos/neutres/[name][ext]",
+        },
       ],
     }),
     new HtmlWebpackPlugin({

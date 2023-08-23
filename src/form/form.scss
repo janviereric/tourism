@@ -25,9 +25,6 @@ main {
         font-weight: 700;
         margin-bottom: 1rem;
       }
-      select {
-        height: 4rem;
-      }
       input {
         border: 0.1rem solid var(--divider);
         padding: 1rem;
@@ -38,19 +35,8 @@ main {
           border-color: var(--primary);
         }
       }
-      textarea {
-        border: 0.1rem solid var(--divider);
-        padding: 1rem;
-        outline: none;
-        resize: none;
-        border-radius: 0.3rem;
-        cursor: default;
-        &:focus {
-          border-color: var(--primary);
-        }
-      }
       select {
-        height: 4.5rem;
+        height: 4rem;
         font-size: 1.4rem;
         border: 0.1rem solid var(--divider);
         padding: 0.5rem;
@@ -60,9 +46,6 @@ main {
         &:focus {
           border-color: var(--primary);
         }
-      }
-      textarea {
-        min-height: 20rem;
       }
     }
     .form-category {
