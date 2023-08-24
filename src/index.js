@@ -437,6 +437,7 @@ const createFormPhotosElement = async (formPhotosArray) => {
     return formPhotoContainer;
   });
   photosContainer.innerHTML = "";
+  formPhotosElement.reverse();
   photosContainer.append(...formPhotosElement);
   DisplayHomePhotos();
 };
