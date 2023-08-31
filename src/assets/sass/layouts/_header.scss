@@ -1,3 +1,5 @@
+@use "../partials/media-queries.scss" as *;
+
 header {
   grid-area: header;
   padding: 2rem;
@@ -22,35 +24,48 @@ header {
     }
   }
 
-  ul {
-    display: flex;
-    margin-right: -0.5rem;
-    li {
-      padding: 1rem;
-      margin-right: 1rem;
-      font-size: 1.5rem;
-      &:hover {
-        transition: all 0.2s;
-        cursor: pointer;
-        background-color: var(--secondary);
-        border-radius: 0.2rem;
+  .header-menu {
+    ul {
+      @include phone {
+        display: none;
+      }
+      display: flex;
+      margin-right: -0.5rem;
+      li {
         padding: 1rem;
-        a {
-          color: var(--light);
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        &:hover {
+          transition: all 0.2s;
+          cursor: pointer;
+          background-color: var(--secondary);
+          border-radius: 0.2rem;
+          padding: 1rem;
+          a {
+            color: var(--light);
+          }
+        }
+        .header-brand {
+          font-size: 1.8rem;
+          padding: 0 0.1rem;
         }
       }
-      .header-brand {
-        font-size: 1.8rem;
-        padding: 0 0.1rem;
+      .active {
+        background-color: var(--light);
+        padding: 1rem;
+        border-radius: 0.2rem;
+        a {
+          color: var(--secondary);
+        }
       }
     }
-    .active {
-      background-color: var(--light);
-      padding: 1rem;
-      border-radius: 0.2rem;
-      a {
-        color: var(--secondary);
-      }
+  }
+  .header-menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: var(--light);
+    @include phone {
+      display: block;
     }
   }
 }
