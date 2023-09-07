@@ -1,0 +1,60 @@
+.container-photo-detail {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-photo-name {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .photo-detail {
+    margin-bottom: 5rem;
+  }
+  .container-user-date {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+    .user-profile {
+      height: 5rem;
+      width: 5rem;
+      img {
+        border-radius: 5rem;
+      }
+    }
+    .container-date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin-left: 3rem;
+      }
+    }
+  }
+  .container-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48rem;
+    margin-bottom: 5rem;
+  }
+  .container-button {
+    width: 32rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .edit-button {
+      margin-right: 2rem;
+      background-color: var(--success);
+      color: var(--light);
+    }
+    .delete-button {
+      margin-right: 2rem;
+      background-color: var(--danger);
+      color: var(--light);
+    }
+  }
+}
