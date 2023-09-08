@@ -11,30 +11,42 @@
       font-size: 2rem;
     }
   }
-  .photo-detail {
+  .container-photo-img {
     margin-bottom: 5rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    img {
+      // temporaire :
+      height: 40rem;
+      width: 60rem;
+    }
   }
-  .container-user-date {
+  .container-user {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5rem;
-    .user-profile {
+    margin-bottom: 3rem;
+    .container-user-img {
       height: 5rem;
       width: 5rem;
       img {
-        border-radius: 5rem;
+        border-radius: 2.5rem;
+        height: 5rem;
+        width: 5rem;
       }
     }
-    .container-date {
+    .container-user-name {
       display: flex;
       justify-content: center;
       align-items: center;
-      p {
-        margin-left: 3rem;
-      }
+      margin-left: 2rem;
     }
   }
-  .container-description {
+  .container-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .container-content {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,56 @@
+.container-photo-detail {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container-photo-name {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .container-photo-img {
+    margin-bottom: 5rem;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    img {
+      // temporaire :
+      height: 40rem;
+      width: 60rem;
+    }
+  }
+  .container-user {
+    display: flex;
+    margin-bottom: 3rem;
+    .container-user-img {
+      height: 5rem;
+      width: 5rem;
+      img {
+        border-radius: 2.5rem;
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+    .container-user-name {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2rem;
+    }
+  }
+  .container-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+  .container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 48rem;
+    margin-bottom: 5rem;
+  }
+}

@@ -5,7 +5,7 @@ import "./index.scss";
 const photosContainer = document.querySelector("#photos-container");
 
 ////////////////////////////// home start //////////////////////////////
-const displayHomePhotos = () => {
+const displayHomePhotos = async () => {
   const homePhotosElement = homePhotosArray.map((homePhoto, index) => {
     return createHomePhotosElement(homePhoto, index);
   });
@@ -24,7 +24,7 @@ const createHomePhotosElement = (homePhoto, index) => {
   homePhotoContainer.addEventListener("click", (event) => {
     const target = event.target;
     const homePhotoId = target.dataset.id;
-    window.location.assign(`./detail.html?number=${homePhotoId}`);
+    window.location.assign(`./detailhome.html?id=${homePhotoId}`);
   });
   return homePhotoContainer;
 };
@@ -43,7 +43,7 @@ const createFormPhotosElement = (formPhotosArray) => {
     formPhotoContainer.addEventListener("click", (event) => {
       const target = event.target;
       const formPhotoId = target.dataset.id;
-      window.location.assign(`./detail.html?id=${formPhotoId}`);
+      window.location.assign(`./detailform.html?id=${formPhotoId}`);
     });
 
     switch (formPhoto.picture) {
