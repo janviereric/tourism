@@ -6,10 +6,14 @@ const photosContainer = document.querySelector("#photos-container");
 
 ////////////////////////////// home start //////////////////////////////
 const displayHomePhotos = async () => {
-  const homePhotosElement = homePhotosArray.map((homePhoto, index) => {
-    return createHomePhotosElement(homePhoto, index);
-  });
-  photosContainer.append(...homePhotosElement);
+  try {
+    const homePhotosElement = homePhotosArray.map((homePhoto, index) => {
+      return createHomePhotosElement(homePhoto, index);
+    });
+    photosContainer.append(...homePhotosElement);
+  } catch {
+    window.location.assign("./index.html");
+  }
 };
 
 const createHomePhotosElement = (homePhoto, index) => {

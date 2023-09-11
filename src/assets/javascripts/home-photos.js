@@ -17,7 +17,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-automne.jpg",
     picture: "Une Forêt (Automne)",
     category: "Quête",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le mercredi 02 août 2023",
@@ -67,7 +67,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-calif-us.jpg",
     picture: "Une Forêt en Californie (USA)",
     category: "Collection",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le mardi 08 août 2023",
@@ -117,7 +117,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-de.jpg",
     picture: "Une Forêts en Allemagne",
     category: "Partage",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le lundi 14 août 2023",
@@ -167,7 +167,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-ee.jpg",
     picture: "Une Forêt en Estonie",
     category: "Guide",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le vendredi 18 août 2023",
@@ -217,7 +217,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-ete.jpg",
     picture: "Une Forêt (Été)",
     category: "Quête",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le jeudi 24 août 2023",
@@ -267,7 +267,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-gb.jpg",
     picture: "Une Forêt en Grande-Bretagne",
     category: "Collection",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le mercredi 30 août 2023",
@@ -317,7 +317,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-hiver.jpg",
     picture: "Une Forêt (Hiver)",
     category: "Paratge",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le mardi 05 septembre 2023",
@@ -367,7 +367,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-id.jpg",
     picture: "Une Forêt en Inde",
     category: "Guide",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le lundi 11 septembre 2023",
@@ -417,7 +417,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-printemps.jpg",
     picture: "Une Forêt (Printemps)",
     category: "Quête",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le vendredi 15 septembre 2023",
@@ -467,7 +467,7 @@ export const homePhotosArray = [
     src: "./assets/images/home-photos/home-forets/foret-se.jpg",
     picture: "Une Forêt en Suède",
     category: "Collection",
-    photographer: "Sophie - L'Administratrice",
+    photographer: "Marie - L'Administratrice",
     photographerImg:
       "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     createdAt: "le jeudi 21 septembre 2023",
