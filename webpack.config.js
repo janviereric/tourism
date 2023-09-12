@@ -68,6 +68,39 @@ module.exports = {
           from: "./src/assets/images/form-photos/form-villes/*",
           to: "assets/images/form-photos/form-villes/[name][ext]",
         },
+
+        {
+          from: "./src/assets/images/home-detail/home-deserts-detail/*",
+          to: "assets/images/home-detail/home-deserts-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-detail/home-forets-detail/*",
+          to: "assets/images/home-detail/home-forets-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-detail/home-plages-detail/*",
+          to: "assets/images/home-detail/home-plages-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/home-detail/home-villes-detail/*",
+          to: "assets/images/home-detail/home-villes-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-detail/form-deserts-detail/*",
+          to: "assets/images/form-detail/form-deserts-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-detail/form-forets-detail/*",
+          to: "assets/images/form-detail/form-forets-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-detail/form-plages-detail/*",
+          to: "assets/images/form-detail/form-plages-detail/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-detail/form-villes-detail/*",
+          to: "assets/images/form-detail/form-villes-detail/[name][ext]",
+        },
       ],
     }),
     new HtmlWebpackPlugin({
