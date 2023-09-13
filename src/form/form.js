@@ -14,6 +14,7 @@ const textContentColor = document.querySelector("#text-content-color");
 const textContentStar = document.querySelector("#text-content-star");
 const textInfoContent = document.querySelector("#text-info-content");
 const textInfo = document.querySelector("#text-info");
+const buttonCancel = document.querySelector(".button-cancel");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault(photo);
@@ -134,3 +135,7 @@ const formIsValid = (photo) => {
     return true;
   }
 };
+
+buttonCancel.addEventListener("click", (event) => {
+  location.assign("./index.html");
+});
