@@ -26,7 +26,7 @@ const diplayDetailHomePhoto = async () => {
       containerContent.innerHTML = `<p>${homePhotosArray[photoId].content}</p>`;
     }
   } catch {
-    window.location.assign("./index.html");
+    location.assign("./index.html");
   }
 };
 

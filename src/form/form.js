@@ -29,8 +29,9 @@ form.addEventListener("submit", async (event) => {
           "Content-Type": "application/json",
         },
       });
-      const body = await response.json();
-      console.log(body);
+      if (response.status < 300) {
+        location.assign("./index.html");
+      }
     } catch (error) {
       console.error("error : ", error);
     }

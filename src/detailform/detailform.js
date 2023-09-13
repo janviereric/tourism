@@ -325,11 +325,11 @@ const displayDetailFormPhoto = async () => {
           }
         }
       } else {
-        window.location.assign("./index.html");
+        location.assign("./index.html");
       }
     }
   } catch {
-    window.location.assign("./index.html");
+    location.assign("./index.html");
   }
 };
 
