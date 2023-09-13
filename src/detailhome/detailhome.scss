@@ -14,6 +14,8 @@
   .container-photo-img {
     margin-bottom: 5rem;
     padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     box-shadow: var(--shadow);
   }
   .container-user {
@@ -47,5 +49,14 @@
     align-items: center;
     max-width: 48rem;
     margin-bottom: 5rem;
+    p {
+      padding: 2rem;
+    }
+  }
+  .container-button {
+    width: 32rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
