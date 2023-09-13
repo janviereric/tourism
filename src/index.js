@@ -20,7 +20,7 @@ const createHomePhotosElement = (homePhoto, index) => {
   const homePhotoContainer = document.createElement("div");
   homePhotoContainer.classList.add("home-photo-container");
   homePhotoContainer.innerHTML = `
-  <img src="${homePhoto.src}" alt="${homePhoto.picture}" />
+  <img src="${homePhoto.photoSrc}" alt="${homePhoto.picture}" />
     <h2>${homePhoto.picture}</h2>
   `;
   const homePhotoImg = homePhotoContainer.querySelector("img");
@@ -193,7 +193,7 @@ const createFormPhotosElement = (formPhotosArray) => {
         break;
       }
       case "Une Plage en Polynésie Française": {
-        formPhotoImgo.src =
+        formPhotoImg.src =
           "./assets/images/form-photos/form-plages/plage-pf.jpg";
         break;
       }

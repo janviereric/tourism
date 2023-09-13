@@ -14,7 +14,7 @@ const diplayDetailHomePhoto = async () => {
     const photoId = params.searchParams.get("id");
     if (photoId) {
       containerPhotoName.innerHTML = `<h1>${homePhotosArray[photoId].picture}</h1>`;
-      containerPhotoImg.innerHTML = `<img src="${homePhotosArray[photoId].src}" alt="${homePhotosArray[photoId].picture}" />`;
+      containerPhotoImg.innerHTML = `<img src="${homePhotosArray[photoId].detailSrc}" alt="${homePhotosArray[photoId].picture}" />`;
       containerUser.innerHTML = `
             <div class="container-user-img">
             <img src="${homePhotosArray[photoId].photographerImg}" /> 
@@ -24,15 +24,6 @@ const diplayDetailHomePhoto = async () => {
             </div>`;
       containerDate.innerHTML = `Posté ${homePhotosArray[photoId].createdAt}`;
       containerContent.innerHTML = `<p>${homePhotosArray[photoId].content}</p>`;
-
-      const homePhotoImg = containerPhotoImg.querySelector("img");
-      switch (homePhotosArray[photoId].picture) {
-        case "Un Désert en Cisjordanie": {
-          homePhotoImg.src =
-            "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-          break;
-        }
-      }
     }
   } catch {
     window.location.assign("./index.html");
