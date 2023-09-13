@@ -27,6 +27,16 @@
     border: 0.2rem solid var(--primary);
     color: var(--primary);
   }
+  &-edit {
+    margin-right: 2rem;
+    background-color: var(--success);
+    color: var(--light);
+  }
+  &-delete {
+    margin-right: 2rem;
+    background-color: var(--danger);
+    color: var(--light);
+  }
 }
 
 .text {

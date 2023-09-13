@@ -53,15 +53,5 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    .edit-button {
-      margin-right: 2rem;
-      background-color: var(--success);
-      color: var(--light);
-    }
-    .delete-button {
-      margin-right: 2rem;
-      background-color: var(--danger);
-      color: var(--light);
-    }
   }
 }

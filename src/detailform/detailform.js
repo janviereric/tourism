@@ -35,8 +35,8 @@ const displayDetailFormPhoto = async () => {
         })}`;
         containerContent.innerHTML = `<p>${formPhoto.content}</p>`;
         containerButton.innerHTML = `
-          <button class="button edit-button">Éditer</button>
-          <button class="button delete-button">Supprimer</button>`;
+          <button class="button button-edit">Éditer</button>
+          <button class="button button-delete">Supprimer</button>`;
 
         const formPhotoImg = containerPhotoImg.querySelector("img");
         switch (formPhoto.picture) {
@@ -324,6 +324,19 @@ const displayDetailFormPhoto = async () => {
             break;
           }
         }
+
+        const buttonDelete = containerButton.querySelector(".button-delete");
+        buttonDelete.addEventListener("click", async (event) => {
+          try {
+            const response = await fetch(
+              `https://restapi.fr/api/photos/${photoId}`,
+              { method: "DELETE" }
+            );
+            location.assign("./index.html");
+          } catch (error) {
+            console.log("error : ", error);
+          }
+        });
       } else {
         location.assign("./index.html");
       }
