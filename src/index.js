@@ -274,10 +274,10 @@ const fetchFormPhotos = async () => {
   try {
     const response = await fetch("https://restapi.fr/api/photos");
     let formPhotos = await response.json();
-    createFormPhotosElement(formPhotos);
     if (!Array.isArray(formPhotos)) {
       formPhotos = [formPhotos];
     }
+    createFormPhotosElement(formPhotos);
   } catch (error) {
     console.log(("error : ", error));
   }
