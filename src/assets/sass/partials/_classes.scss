@@ -37,6 +37,11 @@
     background-color: var(--danger);
     color: var(--light);
   }
+  &-save {
+    background: var(--primary);
+    border: 0.2rem solid var(--primary);
+    color: var(--light);
+  }
 }
 
 .text {

@@ -325,6 +325,11 @@ const displayDetailFormPhoto = async () => {
           }
         }
 
+        const buttonEdit = containerButton.querySelector(".button-edit");
+        buttonEdit.addEventListener("click", (event) => {
+          location.assign(`./editform.html?id=${photoId}`);
+        });
+
         const buttonDelete = containerButton.querySelector(".button-delete");
         buttonDelete.addEventListener("click", async (event) => {
           try {

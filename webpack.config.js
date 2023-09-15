@@ -9,6 +9,7 @@ module.exports = {
     form: path.join(__dirname, "src/form/form.js"),
     detailhome: path.join(__dirname, "src/detailhome/detailhome.js"),
     detailform: path.join(__dirname, "src/detailform/detailform.js"),
+    editform: path.join(__dirname, "src/editform/editform.js"),
     header: path.join(__dirname, "src/assets/javascripts/header.js"),
   },
   output: {
@@ -122,6 +123,11 @@ module.exports = {
       filename: "./detailform.html",
       template: path.join(__dirname, "./src/detailform/detailform.html"),
       chunks: ["detailform", "header"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "./editform.html",
+      template: path.join(__dirname, "./src/editform/editform.html"),
+      chunks: ["editform", "header"],
     }),
   ],
   stats: "minimal",
