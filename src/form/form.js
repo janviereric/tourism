@@ -16,6 +16,291 @@ const textInfoContent = document.querySelector("#text-info-content");
 const textInfo = document.querySelector("#text-info");
 const buttonCancel = document.querySelector(".button-cancel");
 
+const containerPhotoImg = document.querySelector("#container-photo-img");
+const containerUserImg = document.querySelector(".container-user-img");
+containerPhotoImg.innerHTML = `<img src="" class="img-padding" />`;
+containerUserImg.innerHTML = ``;
+console.log(containerPhotoImg);
+console.log(containerUserImg);
+const select = document.querySelector("select");
+select.addEventListener("change", (event) => {
+  const formPhotoImg = containerPhotoImg.querySelector("img");
+  const selectName = event.target.value;
+  console.log(selectName);
+  switch (selectName) {
+    case "": {
+      containerPhotoImg.classList.add("photo-img-none");
+      containerPhotoImg.classList.remove("photo-img-center");
+      formPhotoImg.src = "";
+      break;
+    }
+    case "Un Désert en Cisjordanie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+      break;
+    }
+    case "Un Désert en Jordanie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+      break;
+    }
+    case "Un Désert au Maroc": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+      break;
+    }
+    case "Un Désert en Namibie (Océan Atlantique)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+      break;
+    }
+    case "Un Désert en Oman": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-om.jpg";
+      break;
+    }
+    case "Un Désert au Pérou": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+      break;
+    }
+    case "Un Désert en Arabie Saoudite": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+      break;
+    }
+    case "Un Désert en Namibie (Sud-Ouest)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+      break;
+    }
+    case "Le Désert du Sahara (Soir)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+      break;
+    }
+    case "Sable Blanc du Nouveau-Mexique (USA)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+      break;
+    }
+  }
+
+  switch (selectName) {
+    case "Une Forêt en Australie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+      break;
+    }
+    case "Une Forêt au Canada": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+      break;
+    }
+    case "Une Forêt en Finlande": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+      break;
+    }
+    case "Une Forêt en Croatie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+      break;
+    }
+    case "Une Forêt en Inde": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+      break;
+    }
+    case "Une Forêt en Italie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+      break;
+    }
+    case "Une Forêt au Japon": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+      break;
+    }
+    case "La Forêt des Loups": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-forets/foret-loups.jpg";
+      break;
+    }
+    case "Une Forêt au Nouvelle-Zélande": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+      break;
+    }
+    case "Une Forêt en Washington (USA)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+      break;
+    }
+  }
+
+  switch (selectName) {
+    case "Une Plage en Australie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+      break;
+    }
+    case "Une Plage au Brésil": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+      break;
+    }
+    case "Une Plage en Grande-Bretagne": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+      break;
+    }
+    case "Une Plage en Italie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+      break;
+    }
+    case "Une Plage en Madagascar": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+      break;
+    }
+    case "Une Plage au Mexique": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+      break;
+    }
+    case "Une Plage en Nouvelle-Calédonie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+      break;
+    }
+    case "Une Plage en Polynésie Française": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+      break;
+    }
+    case "Une Plage aux Sychelles": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+      break;
+    }
+    case "Une Plage en Thaïlande": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+      break;
+    }
+  }
+
+  switch (selectName) {
+    case "Une Ville au Chili": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+      break;
+    }
+    case "Une Ville en Chine": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+      break;
+    }
+    case "Une Ville en Colombie": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+      break;
+    }
+    case "Une Ville en France": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+      break;
+    }
+    case "Une Ville en Grande-Bretagne": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+      break;
+    }
+    case "Une Ville au Japon (Jour)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+      break;
+    }
+    case "Une Ville en Koweït": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+      break;
+    }
+    case "Une Ville en Norvège": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+      break;
+    }
+    case "Une Ville Rural d'Allemagne": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+      break;
+    }
+    case "Une Ville d'Italie (Soir)": {
+      containerPhotoImg.classList.remove("photo-img-none");
+      containerPhotoImg.classList.add("photo-img-center");
+      formPhotoImg.src =
+        "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+      break;
+    }
+  }
+});
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   const formData = new FormData(form);
@@ -60,7 +345,7 @@ const formIsValid = (photo) => {
       textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
       setTimeout(() => {
         textInfoPicture.innerHTML = "";
-      }, 5000);
+      }, 2000);
     }
 
     if (
@@ -70,7 +355,7 @@ const formIsValid = (photo) => {
       textInfoCategory.innerHTML = "Veuillez choisir categorie.";
       setTimeout(() => {
         textInfoCategory.innerHTML = "";
-      }, 5000);
+      }, 2000);
     }
 
     if (
@@ -81,7 +366,7 @@ const formIsValid = (photo) => {
         "Veuillez indiquer le nom du Photographe.";
       setTimeout(() => {
         textInfoPhotographer.innerHTML = "";
-      }, 5000);
+      }, 2000);
     }
 
     if (
@@ -91,7 +376,7 @@ const formIsValid = (photo) => {
       textInfoContent.innerHTML = "Veuillez partager votre avis.";
       setTimeout(() => {
         textInfoContent.innerHTML = "";
-      }, 5000);
+      }, 2000);
     }
 
     if (
@@ -127,7 +412,7 @@ const formIsValid = (photo) => {
         textPhotographerStar.classList.remove("text-danger");
         textContentStar.innerHTML = "";
         textContentStar.classList.remove("text-danger");
-      }, 5000);
+      }, 2000);
     }
     return false;
   } else {

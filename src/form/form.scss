@@ -81,6 +81,22 @@ main {
   }
 }
 
+.photo-img-none {
+  display: none;
+}
+
+.photo-img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  .img-padding {
+    padding: 1rem;
+    box-shadow: var(--shadow);
+  }
+}
+
 #text-info-category {
   color: var(--danger);
   font-weight: 700;
