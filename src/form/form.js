@@ -17,7 +17,7 @@ const textInfo = document.querySelector("#text-info");
 const buttonCancel = document.querySelector(".button-cancel");
 
 form.addEventListener("submit", async (event) => {
-  event.preventDefault(photo);
+  event.preventDefault();
   const formData = new FormData(form);
   const photo = Object.fromEntries(formData.entries());
   if (formIsValid(photo)) {
@@ -137,5 +137,6 @@ const formIsValid = (photo) => {
 };
 
 buttonCancel.addEventListener("click", (event) => {
+  event.stopPropagation();
   location.assign("./index.html");
 });

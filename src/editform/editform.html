@@ -44,12 +44,12 @@
       </header>
       <main>
         <form>
-          <h2 class="title-underline">Modifier la Photo</h2>
+          <h2 class="title-underline">Éditer la Photo</h2>
           <div class="container-name-photo"></div>
           <div class="container-detail-photo"></div>
           <div class="form-group form-picture">
             <label for="picture"
-              ><span id="text-picture-color">Choisir une Photo</span
+              ><span id="text-picture-color">Modification de la Photo</span
               ><span id="text-picture-star"></span
             ></label>
             <select name="picture" id="picture">
@@ -154,12 +154,11 @@
                 </option>
               </optgroup>
             </select>
-            <small id="text-info-picture"></small>
           </div>
           <div class="form-category">
             <label
               ><span id="text-category-color" class="form-title-category"
-                >Categorie de la Photo</span
+                >Modification de la Catégorie</span
               ><span id="text-category-star"></span
             ></label>
             <div class="container-name-category">
@@ -190,18 +189,68 @@
                 <label for="Partage">Partage</label>
               </div>
             </div>
-            <small id="text-info-category"></small>
+          </div>
+
+          <div class="form-group form-photographer">
+            <label for="photographer"
+              ><span id="text-photographer-color"
+                >Modification du Photographe</span
+              ><span id="text-photographer-star"></span
+            ></label>
+            <select name="photographer" id="photographer">
+              <optgroup label="Exploration">
+                <option value="Dora - L'Exploratrice">
+                  Dora - L'Exploratrice
+                </option>
+                <option value="Tad - L'Explorateur">Tad - L'Explorateur</option>
+                <option value="Polo - L'Explorateur">
+                  Polo - L'Explorateur
+                </option>
+              </optgroup>
+              <optgroup label="Voyage">
+                <option value="Chihiro - La Voyageuse">
+                  Chihiro - La Voyageuse
+                </option>
+                <option value="Robinson - Le Voyageur">
+                  Robinson - Le Voyageur
+                </option>
+                <option value="Phileas - Le Voyageur">
+                  Phileas - Le Voyageur
+                </option>
+              </optgroup>
+              <optgroup label="Archéologie">
+                <option value="Jones - L'Archéologue">
+                  Jones - L'Archéologue
+                </option>
+                <option value="Lara - L'Archéologue">
+                  Lara - L'Archéologue
+                </option>
+                <option value="Milo - L'Archéologue">
+                  Milo - L'Archéologue
+                </option>
+              </optgroup>
+              <optgroup label="Aventure">
+                <option value="Tom - L'Aventurier">Tom - L'Aventurier</option>
+                <option value="Gamba - L'Aventurier">
+                  Gamba - L'Aventurier
+                </option>
+                <option value="Sophie - L'Aventurière">
+                  Sophie - L'Aventurière
+                </option>
+              </optgroup>
+            </select>
+            <small id="text-info-photographer"></small>
           </div>
 
           <div class="form-group form-content">
             <label for="content"
-              ><span id="text-content-color">Description de la Photo</span
+              ><span id="text-content-color"
+                >Modification de la Description</span
               ><span id="text-content-star"></span
             ></label>
             <textarea name="content" id="content"> </textarea>
             <small id="text-info-content"></small>
           </div>
-          <small id="text-info"></small>
 
           <div class="form-button-container">
             <button type="button" class="button button-cancel">Annuler</button>

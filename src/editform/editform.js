@@ -3,20 +3,22 @@ import "./editform.scss";
 
 const params = new URL(location.href);
 const photoId = params.searchParams.get("id");
+const form = document.querySelector("form");
 const buttonCancel = document.querySelector(".button-cancel");
+const textInfoContent = document.querySelector("#text-info-content");
+console.log(form);
 
 const fillForm = (formPhoto) => {
   const picture = document.querySelector("select[name='picture']");
   const category = document.querySelector(
     `input[value='${formPhoto.category}']`
   );
+  const photographer = document.querySelector("select[name='photographer']");
   const content = document.querySelector("textarea");
-  console.log(picture);
-  console.log(category);
-  console.log(content);
   picture.value = formPhoto.picture;
   category.value = formPhoto.category;
   category.setAttribute("checked", `${formPhoto.category}`);
+  photographer.value = formPhoto.photographer;
   content.value = formPhoto.content;
 };
 
@@ -26,7 +28,6 @@ const initForm = async () => {
     if (response.status < 300) {
       const formPhoto = await response.json();
       fillForm(formPhoto);
-      console.log(formPhoto);
       const containerNamePhoto = document.querySelector(
         ".container-name-photo"
       );
@@ -519,8 +520,50 @@ const initForm = async () => {
   }
 };
 
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  const photo = Object.fromEntries(formData.entries());
+  if (formIsValid(photo)) {
+    try {
+      if (photoId) {
+        const json = JSON.stringify(photo);
+        const response = await fetch(
+          `https://restapi.fr/api/photos/${photoId}`,
+          {
+            method: "PUT",
+            body: json,
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+        if (response.status < 300) {
+          location.assign("./index.html");
+        }
+      }
+    } catch (error) {
+      console.error("error : ", error);
+    }
+  }
+});
+
 buttonCancel.addEventListener("click", (event) => {
+  event.stopPropagation();
   location.assign(`./detailform.html?id=${photoId}`);
 });
+
+const formIsValid = (photo) => {
+  if (!photo.content) {
+    textInfoContent.innerHTML = "Veuillez partager votre avis.";
+    setTimeout(() => {
+      textInfoContent.innerHTML = "";
+    }, 5000);
+    return false;
+  } else {
+    textInfoContent.innerHTML = "";
+    return true;
+  }
+};
 
 initForm();

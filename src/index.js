@@ -12,7 +12,7 @@ const displayHomePhotos = async () => {
     });
     photosContainer.append(...homePhotosElement);
   } catch {
-    window.location.assign("./index.html");
+    location.assign("./index.html");
   }
 };
 
@@ -47,7 +47,7 @@ const createFormPhotosElement = (formPhotosArray) => {
     formPhotoContainer.addEventListener("click", (event) => {
       const target = event.target;
       const formPhotoId = target.dataset.id;
-      window.location.assign(`./detailform.html?id=${formPhotoId}`);
+      location.assign(`./detailform.html?id=${formPhotoId}`);
     });
 
     switch (formPhoto.picture) {

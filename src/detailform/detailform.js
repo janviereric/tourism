@@ -327,11 +327,13 @@ const displayDetailFormPhoto = async () => {
 
         const buttonEdit = containerButton.querySelector(".button-edit");
         buttonEdit.addEventListener("click", (event) => {
+          event.stopPropagation();
           location.assign(`./editform.html?id=${photoId}`);
         });
 
         const buttonDelete = containerButton.querySelector(".button-delete");
         buttonDelete.addEventListener("click", async (event) => {
+          event.stopPropagation();
           try {
             const response = await fetch(
               `https://restapi.fr/api/photos/${photoId}`,

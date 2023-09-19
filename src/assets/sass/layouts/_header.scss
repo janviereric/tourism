@@ -33,27 +33,29 @@ header {
       display: flex;
       margin-right: -0.5rem;
       li {
-        padding: 1rem;
-        margin-right: 1rem;
-        font-size: 1.5rem;
-        &:hover {
-          transition: all 0.2s;
-          cursor: pointer;
-          background-color: var(--secondary);
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          padding: 1rem 2rem 1rem 2rem;
+          font-size: 1.5rem;
           border-radius: 0.2rem;
-          padding: 1rem;
-          a {
+          cursor: pointer;
+          transition: all 0.2s;
+          &:hover {
+            transition: all 0.2s;
+            background-color: var(--secondary);
             color: var(--light);
           }
-        }
-        .header-brand {
-          font-size: 1.8rem;
-          padding: 0 0.1rem;
+          .header-brand {
+            font-size: 1.8rem;
+            padding: 0 0.1rem;
+          }
         }
       }
       .active {
         background-color: var(--light);
-        padding: 1rem;
         border-radius: 0.2rem;
         a {
           color: var(--secondary);
