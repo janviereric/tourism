@@ -102,6 +102,26 @@ module.exports = {
           from: "./src/assets/images/form-detail/form-villes-detail/*",
           to: "assets/images/form-detail/form-villes-detail/[name][ext]",
         },
+        {
+          from: "./src/assets/images/home-users/*",
+          to: "assets/images/home-users/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-users/users-aventure/*",
+          to: "assets/images/form-users/users-aventure/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-users/users-exploration/*",
+          to: "assets/images/form-users/users-exploration/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-users/users-visite/*",
+          to: "assets/images/form-users/users-visite/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-users/users-voyage/*",
+          to: "assets/images/form-users/users-voyage/[name][ext]",
+        },
       ],
     }),
     new HtmlWebpackPlugin({
