@@ -81,6 +81,7 @@ main {
   }
 }
 
+// js start
 .photo-img-none {
   display: none;
 }
@@ -96,6 +97,24 @@ main {
     box-shadow: var(--shadow);
   }
 }
+
+.photographer-img-none {
+  display: none;
+}
+
+.photographer-img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  .img-profil {
+    padding: 1rem;
+    box-shadow: var(--shadow);
+  }
+}
+
+// js end
 
 #text-info-category {
   color: var(--danger);

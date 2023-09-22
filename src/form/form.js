@@ -17,17 +17,13 @@ const textInfo = document.querySelector("#text-info");
 const buttonCancel = document.querySelector(".button-cancel");
 
 const containerPhotoImg = document.querySelector("#container-photo-img");
-const containerUserImg = document.querySelector(".container-user-img");
-containerPhotoImg.innerHTML = `<img src="" class="img-padding" />`;
-containerUserImg.innerHTML = ``;
-console.log(containerPhotoImg);
-console.log(containerUserImg);
-const select = document.querySelector("select");
-select.addEventListener("change", (event) => {
+containerPhotoImg.innerHTML = "<img src='' class='img-padding' />";
+const selectPicture = document.querySelector("select[name='picture']");
+selectPicture.addEventListener("change", (event) => {
   const formPhotoImg = containerPhotoImg.querySelector("img");
-  const selectName = event.target.value;
-  console.log(selectName);
-  switch (selectName) {
+  const selectPictureName = event.target.value;
+  console.log(selectPictureName);
+  switch (selectPictureName) {
     case "": {
       containerPhotoImg.classList.add("photo-img-none");
       containerPhotoImg.classList.remove("photo-img-center");
@@ -104,9 +100,7 @@ select.addEventListener("change", (event) => {
         "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
       break;
     }
-  }
 
-  switch (selectName) {
     case "Une Forêt en Australie": {
       containerPhotoImg.classList.remove("photo-img-none");
       containerPhotoImg.classList.add("photo-img-center");
@@ -169,9 +163,7 @@ select.addEventListener("change", (event) => {
         "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
       break;
     }
-  }
 
-  switch (selectName) {
     case "Une Plage en Australie": {
       containerPhotoImg.classList.remove("photo-img-none");
       containerPhotoImg.classList.add("photo-img-center");
@@ -232,9 +224,7 @@ select.addEventListener("change", (event) => {
       formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
       break;
     }
-  }
 
-  switch (selectName) {
     case "Une Ville au Chili": {
       containerPhotoImg.classList.remove("photo-img-none");
       containerPhotoImg.classList.add("photo-img-center");
@@ -296,6 +286,141 @@ select.addEventListener("change", (event) => {
       containerPhotoImg.classList.add("photo-img-center");
       formPhotoImg.src =
         "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+      break;
+    }
+  }
+});
+
+const containerPhotographerImg = document.querySelector(
+  "#container-photographer-img"
+);
+containerPhotographerImg.innerHTML = "<img src='' class='img-padding' />";
+const selectPhotographer = document.querySelector(
+  "select[name='photographer']"
+);
+selectPhotographer.addEventListener("change", (event) => {
+  const formPhotographerImg = containerPhotographerImg.querySelector("img");
+  const selectPhotographerName = event.target.value;
+  switch (selectPhotographerName) {
+    case "": {
+      containerPhotographerImg.classList.add("photo-img-none");
+      containerPhotographerImg.classList.remove("photo-img-center");
+      formPhotographerImg.src = "";
+      break;
+    }
+    case "Gustave - L'Aventurier": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+      break;
+    }
+    case "Julie - L'Aventurière": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+      break;
+    }
+    case "Henry - L'Aventurier": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+      break;
+    }
+    case "Zoé - L'Aventurière": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+      break;
+    }
+
+    case "Flora - L'Exploratrice": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+      break;
+    }
+    case "Denver - L'Explorateur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+      break;
+    }
+    case "Inaya - L'Exploratrice": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+      break;
+    }
+    case "Seth - L'Explorateur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+      break;
+    }
+
+    case "Lance - Le Visiteur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+      break;
+    }
+    case "Nadia - La Visiteuse": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+      break;
+    }
+    case "Xavier - Le Visiteur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+      break;
+    }
+    case "Ornella - La Visiteuse": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+      break;
+    }
+
+    case "Cerise - La Voyageuse": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+      break;
+    }
+    case "Philibert - Le Voyageur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+      break;
+    }
+    case "Roxane - La Voyageuse": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+      break;
+    }
+    case "Yuu - Le Voyageur": {
+      containerPhotographerImg.classList.remove("photo-img-none");
+      containerPhotographerImg.classList.add("photo-img-center");
+      formPhotographerImg.src =
+        "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
       break;
     }
   }
