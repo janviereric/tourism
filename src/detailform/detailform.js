@@ -90,9 +90,7 @@ const displayDetailFormPhoto = async () => {
               "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
             break;
           }
-        }
 
-        switch (formPhoto.picture) {
           case "Une Forêt en Australie": {
             formPhotoImg.src =
               "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
@@ -143,9 +141,7 @@ const displayDetailFormPhoto = async () => {
               "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
             break;
           }
-        }
 
-        switch (formPhoto.picture) {
           case "Une Plage en Australie": {
             formPhotoImg.src =
               "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
@@ -196,9 +192,7 @@ const displayDetailFormPhoto = async () => {
               "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
             break;
           }
-        }
 
-        switch (formPhoto.picture) {
           case "Une Ville au Chili": {
             formPhotoImg.src =
               "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
@@ -252,75 +246,88 @@ const displayDetailFormPhoto = async () => {
         }
 
         const userPhotoImg = containerUser.querySelector("img");
-
         switch (formPhoto.photographer) {
-          case "Dora - L'Exploratrice": {
+          case "Gustave - L'Aventurier": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-cl.jpg";
+              "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
             break;
           }
-          case "Tad - L'Explorateur": {
+          case "Julie - L'Aventurière": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-cn.jpg";
+              "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
             break;
           }
-          case "Polo - L'Explorateur": {
+          case "Henry - L'Aventurier": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-co.jpg";
+              "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
             break;
           }
-        }
+          case "Zoé - L'Aventurière": {
+            userPhotoImg.src =
+              "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+            break;
+          }
 
-        switch (formPhoto.photographer) {
-          case "Chihiro - La Voyageuse": {
+          case "Flora - L'Exploratrice": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-fr.jpg";
+              "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
             break;
           }
-          case "Robinson - Le Voyageur": {
+          case "Denver - L'Explorateur": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-gb.jpg";
+              "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
             break;
           }
-          case "Phileas - Le Voyageur": {
+          case "Inaya - L'Exploratrice": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+              "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
             break;
           }
-        }
+          case "Seth - L'Explorateur": {
+            userPhotoImg.src =
+              "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+            break;
+          }
 
-        switch (formPhoto.photographer) {
-          case "Jones - L'Archéologue": {
+          case "Lance - Le Visiteur": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-kw.jpg";
+              "./assets/images/form-users/users-visite/lance-visiteur.jpg";
             break;
           }
-          case "Lara - L'Archéologue": {
+          case "Nadia - La Visiteuse": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-no.jpg";
+              "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
             break;
           }
-          case "Milo - L'Archéologue": {
+          case "Xavier - Le Visiteur": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+              "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
             break;
           }
-        }
+          case "Ornella - La Visiteuse": {
+            userPhotoImg.src =
+              "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+            break;
+          }
 
-        switch (formPhoto.photographer) {
-          case "Tom - L'Aventurier": {
+          case "Cerise - La Voyageuse": {
             userPhotoImg.src =
-              "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+              "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
             break;
           }
-          case "Gamba - L'Aventurier": {
+          case "Philibert - Le Voyageur": {
             userPhotoImg.src =
-              "./assets/images/home-photos/home-villes/ville-ap-jp.jpg";
+              "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
             break;
           }
-          case "Sophie - L'Aventurière": {
+          case "Roxane - La Voyageuse": {
             userPhotoImg.src =
-              "./assets/images/home-photos/home-villes/ville-ar.jpg";
+              "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+            break;
+          }
+          case "Yuu - Le Voyageur": {
+            userPhotoImg.src =
+              "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
             break;
           }
         }

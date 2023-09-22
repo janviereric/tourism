@@ -101,9 +101,7 @@ const createFormPhotosElement = (formPhotosArray) => {
           "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
         break;
       }
-    }
 
-    switch (formPhoto.picture) {
       case "Une Forêt en Australie": {
         formPhotoImg.src =
           "./assets/images/form-photos/form-forets/foret-au.jpg";
@@ -154,9 +152,7 @@ const createFormPhotosElement = (formPhotosArray) => {
           "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
         break;
       }
-    }
 
-    switch (formPhoto.picture) {
       case "Une Plage en Australie": {
         formPhotoImg.src =
           "./assets/images/form-photos/form-plages/plage-au.jpg";
@@ -207,9 +203,7 @@ const createFormPhotosElement = (formPhotosArray) => {
           "./assets/images/form-photos/form-plages/plage-th.jpg";
         break;
       }
-    }
 
-    switch (formPhoto.picture) {
       case "Une Ville au Chili": {
         formPhotoImg.src =
           "./assets/images/form-photos/form-villes/ville-cl.jpg";
