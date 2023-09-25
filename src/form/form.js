@@ -17,14 +17,27 @@ const textInfo = document.querySelector("#text-info");
 const buttonCancel = document.querySelector(".button-cancel");
 
 const containerPhotoImg = document.querySelector("#container-photo-img");
+const containerPhotoLabelImg = document.querySelector(
+  "#container-photo-label-img"
+);
+const containerPhotoLabel = document.querySelector("#container-photo-label");
 containerPhotoImg.innerHTML = "<img src='' class='img-padding' />";
+containerPhotoLabelImg.classList.remove("container-photo-label-img");
+containerPhotoLabel.classList.add("flex-column");
+containerPhotoLabel.classList.remove("container-photo-laber");
 const selectPicture = document.querySelector("select[name='picture']");
 selectPicture.addEventListener("change", (event) => {
+  containerPhotoLabelImg.classList.add("container-photo-label-img");
+  containerPhotoLabel.classList.remove("flex-column");
+  containerPhotoLabel.classList.add("container-photo-laber");
   const formPhotoImg = containerPhotoImg.querySelector("img");
   const selectPictureName = event.target.value;
   console.log(selectPictureName);
   switch (selectPictureName) {
     case "": {
+      containerPhotoLabelImg.classList.remove("container-photo-label-img");
+      containerPhotoLabel.classList.add("flex-column");
+      containerPhotoLabel.classList.remove("container-photo-laber");
       containerPhotoImg.classList.add("photo-img-none");
       containerPhotoImg.classList.remove("photo-img-center");
       formPhotoImg.src = "";
@@ -294,15 +307,40 @@ selectPicture.addEventListener("change", (event) => {
 const containerPhotographerImg = document.querySelector(
   "#container-photographer-img"
 );
+const containerPhotographerLabelImg = document.querySelector(
+  "#container-photographer-label-img"
+);
+const containerPhotographerLabel = document.querySelector(
+  "#container-photographer-laber"
+);
 containerPhotographerImg.innerHTML = "<img src='' class='img-padding' />";
+containerPhotographerLabelImg.classList.remove(
+  "container-photographer-label-img"
+);
+containerPhotographerLabel.classList.add("flex-column");
+containerPhotographerLabel.classList.remove("container-photographer-laber");
 const selectPhotographer = document.querySelector(
   "select[name='photographer']"
 );
 selectPhotographer.addEventListener("change", (event) => {
+  containerPhotographerLabelImg.classList.add(
+    "container-photographer-label-img"
+  );
+  containerPhotographerLabel.classList.remove("flex-column");
+  containerPhotographerLabel.classList.add("container-photographer-laber");
+  selectPhotographer.classList.add("width-select-photographer");
   const formPhotographerImg = containerPhotographerImg.querySelector("img");
   const selectPhotographerName = event.target.value;
   switch (selectPhotographerName) {
     case "": {
+      containerPhotographerLabelImg.classList.remove(
+        "container-photographer-label-img"
+      );
+      containerPhotographerLabel.classList.add("flex-column");
+      containerPhotographerLabel.classList.remove(
+        "container-photographer-laber"
+      );
+      selectPhotographer.classList.remove("width-select-photographer");
       containerPhotographerImg.classList.add("photo-img-none");
       containerPhotographerImg.classList.remove("photo-img-center");
       formPhotographerImg.src = "";
