@@ -46,114 +46,142 @@
         <form>
           <h2 class="title-underline">Ajouter une Photo</h2>
           <div class="form-group form-picture">
-            <label for="picture"
-              ><span id="text-picture-color">Choisir une Photo</span
-              ><span id="text-picture-star"></span
-            ></label>
-            <div id="container-photo-img" class="photo-img-none"></div>
-            <select name="picture" id="picture">
-              <option value="">Selectionner une photo</option>
-              <optgroup label="Les Déserts">
-                <option value="Un Désert en Cisjordanie">
-                  Un Désert en Cisjordanie
-                </option>
-                <option value="Un Désert en Jordanie">
-                  Un Désert en Jordanie
-                </option>
-                <option value="Un Désert au Maroc">Un Désert au Maroc</option>
-                <option value="Un Désert en Namibie (Océan Atlantique)">
-                  Un Désert en Namibie (Océan Atlantique)
-                </option>
-                <option value="Un Désert en Oman">Un Désert en Oman</option>
-                <option value="Un Désert au Pérou">Un Désert au Pérou</option>
-                <option value="Un Désert en Arabie Saoudite">
-                  Un Désert en Arabie Saoudite
-                </option>
-                <option value="Un Désert en Namibie (Sud-Ouest)">
-                  Un Désert en Namibie (Sud-Ouest)
-                </option>
-                <option value="Le Désert du Sahara (Soir)">
-                  Le Désert du Sahara (Soir)
-                </option>
-                <option value="Sable Blanc du Nouveau-Mexique (USA)">
-                  Sable Blanc du Nouveau-Mexique (USA)
-                </option>
-              </optgroup>
-              <optgroup label="Les Forêts">
-                <option value="Une Forêt en Australie">
-                  Une Forêt en Australie
-                </option>
-                <option value="Une Forêt au Canada">Une Forêt au Canada</option>
-                <option value="Une Forêt en Finlande">
-                  Une Forêt en Finlande
-                </option>
-                <option value="Une Forêt en Croatie">
-                  Une Forêt en Croatie
-                </option>
-                <option value="Une Forêt en Inde">Une Forêt en Inde</option>
-                <option value="Une Forêt en Italie">Une Forêt en Italie</option>
-                <option value="Une Forêt au Japon">Une Forêt au Japon</option>
-                <option value="La Forêt des Loups">La Forêt des Loups</option>
-                <option value="Une Forêt au Nouvelle-Zélande">
-                  Une Forêt au Nouvelle-Zélande
-                </option>
-                <option value="Une Forêt en Washington (USA)">
-                  Une Forêt en Washington (USA)
-                </option>
-              </optgroup>
-              <optgroup label="Les Plages">
-                <option value="Une Plage en Australie">
-                  Une Plage en Australie
-                </option>
-                <option value="Une Plage au Brésil">Une Plage au Brésil</option>
-                <option value="Une Plage en Grande-Bretagne">
-                  Une Plage en Grande-Bretagne
-                </option>
-                <option value="Une Plage en Italie">Une Plage en Italie</option>
-                <option value="Une Plage en Madagascar">
-                  Une Plage en Madagascar
-                </option>
-                <option value="Une Plage au Mexique">
-                  Une Plage au Mexique
-                </option>
-                <option value="Une Plage en Nouvelle-Calédonie">
-                  Une Plage en Nouvelle-Calédoniee
-                </option>
-                <option value="Une Plage en Polynésie Française">
-                  Une Plage en Polynésie Française
-                </option>
-                <option value="Une Plage aux Sychelles">
-                  Une Plage aux Sychelles
-                </option>
-                <option value="Une Plage en Thaïlande">
-                  Une Plage en Thaïlande
-                </option>
-              </optgroup>
-              <optgroup label="Les Villes">
-                <option value="Une Ville au Chili">Une Ville au Chili</option>
-                <option value="Une Ville en Chine">Une Ville en Chine</option>
-                <option value="Une Ville en Colombie">
-                  Une Ville en Colombie
-                </option>
-                <option value="Une Ville en France">Une Ville en France</option>
-                <option value="Une Ville en Grande-Bretagne">
-                  Une Ville en Grande-Bretagne
-                </option>
-                <option value="Une Ville au Japon (Jour)">
-                  Une Ville au Japon (Jour)
-                </option>
-                <option value="Une Ville en Koweït">Une Ville en Koweït</option>
-                <option value="Une Ville en Norvège">
-                  Une Ville en Norvège
-                </option>
-                <option value="Une Ville Rural d'Allemagne">
-                  Une Ville Rural d'Allemagne
-                </option>
-                <option value="Une Ville d'Italie (Soir)">
-                  Une Ville d'Italie (Soir)
-                </option>
-              </optgroup>
-            </select>
+            <div id="container-photo-label-img">
+              <div id="container-photo-label">
+                <label for="picture"
+                  ><span id="text-picture-color">Choisir une Photo</span
+                  ><span id="text-picture-star"></span
+                ></label>
+                <select name="picture" id="picture">
+                  <option value="">Selectionner une photo</option>
+                  <optgroup label="Les Déserts">
+                    <option value="Un Désert en Cisjordanie">
+                      Un Désert en Cisjordanie
+                    </option>
+                    <option value="Un Désert en Jordanie">
+                      Un Désert en Jordanie
+                    </option>
+                    <option value="Un Désert au Maroc">
+                      Un Désert au Maroc
+                    </option>
+                    <option value="Un Désert en Namibie (Océan Atlantique)">
+                      Un Désert en Namibie (Océan Atlantique)
+                    </option>
+                    <option value="Un Désert en Oman">Un Désert en Oman</option>
+                    <option value="Un Désert au Pérou">
+                      Un Désert au Pérou
+                    </option>
+                    <option value="Un Désert en Arabie Saoudite">
+                      Un Désert en Arabie Saoudite
+                    </option>
+                    <option value="Un Désert en Namibie (Sud-Ouest)">
+                      Un Désert en Namibie (Sud-Ouest)
+                    </option>
+                    <option value="Le Désert du Sahara (Soir)">
+                      Le Désert du Sahara (Soir)
+                    </option>
+                    <option value="Sable Blanc du Nouveau-Mexique (USA)">
+                      Sable Blanc du Nouveau-Mexique (USA)
+                    </option>
+                  </optgroup>
+                  <optgroup label="Les Forêts">
+                    <option value="Une Forêt en Australie">
+                      Une Forêt en Australie
+                    </option>
+                    <option value="Une Forêt au Canada">
+                      Une Forêt au Canada
+                    </option>
+                    <option value="Une Forêt en Finlande">
+                      Une Forêt en Finlande
+                    </option>
+                    <option value="Une Forêt en Croatie">
+                      Une Forêt en Croatie
+                    </option>
+                    <option value="Une Forêt en Inde">Une Forêt en Inde</option>
+                    <option value="Une Forêt en Italie">
+                      Une Forêt en Italie
+                    </option>
+                    <option value="Une Forêt au Japon">
+                      Une Forêt au Japon
+                    </option>
+                    <option value="La Forêt des Loups">
+                      La Forêt des Loups
+                    </option>
+                    <option value="Une Forêt au Nouvelle-Zélande">
+                      Une Forêt au Nouvelle-Zélande
+                    </option>
+                    <option value="Une Forêt en Washington (USA)">
+                      Une Forêt en Washington (USA)
+                    </option>
+                  </optgroup>
+                  <optgroup label="Les Plages">
+                    <option value="Une Plage en Australie">
+                      Une Plage en Australie
+                    </option>
+                    <option value="Une Plage au Brésil">
+                      Une Plage au Brésil
+                    </option>
+                    <option value="Une Plage en Grande-Bretagne">
+                      Une Plage en Grande-Bretagne
+                    </option>
+                    <option value="Une Plage en Italie">
+                      Une Plage en Italie
+                    </option>
+                    <option value="Une Plage en Madagascar">
+                      Une Plage en Madagascar
+                    </option>
+                    <option value="Une Plage au Mexique">
+                      Une Plage au Mexique
+                    </option>
+                    <option value="Une Plage en Nouvelle-Calédonie">
+                      Une Plage en Nouvelle-Calédoniee
+                    </option>
+                    <option value="Une Plage en Polynésie Française">
+                      Une Plage en Polynésie Française
+                    </option>
+                    <option value="Une Plage aux Sychelles">
+                      Une Plage aux Sychelles
+                    </option>
+                    <option value="Une Plage en Thaïlande">
+                      Une Plage en Thaïlande
+                    </option>
+                  </optgroup>
+                  <optgroup label="Les Villes">
+                    <option value="Une Ville au Chili">
+                      Une Ville au Chili
+                    </option>
+                    <option value="Une Ville en Chine">
+                      Une Ville en Chine
+                    </option>
+                    <option value="Une Ville en Colombie">
+                      Une Ville en Colombie
+                    </option>
+                    <option value="Une Ville en France">
+                      Une Ville en France
+                    </option>
+                    <option value="Une Ville en Grande-Bretagne">
+                      Une Ville en Grande-Bretagne
+                    </option>
+                    <option value="Une Ville au Japon (Jour)">
+                      Une Ville au Japon (Jour)
+                    </option>
+                    <option value="Une Ville en Koweït">
+                      Une Ville en Koweït
+                    </option>
+                    <option value="Une Ville en Norvège">
+                      Une Ville en Norvège
+                    </option>
+                    <option value="Une Ville Rural d'Allemagne">
+                      Une Ville Rural d'Allemagne
+                    </option>
+                    <option value="Une Ville d'Italie (Soir)">
+                      Une Ville d'Italie (Soir)
+                    </option>
+                  </optgroup>
+                </select>
+              </div>
+              <div id="container-photo-img" class="photo-img-none"></div>
+            </div>
             <small id="text-info-picture"></small>
           </div>
           <div class="form-category">
@@ -194,65 +222,74 @@
           </div>
 
           <div class="form-group form-photographer">
-            <label for="photographer"
-              ><span id="text-photographer-color">Profil du Photographe</span
-              ><span id="text-photographer-star"></span
-            ></label>
-            <div id="container-photographer-img" class="photo-img-none"></div>
-            <select name="photographer" id="photographer">
-              <option value="">Selectionner un Profil</option>
-              <optgroup label="Aventure">
-                <option value="Gustave - L'Aventurier">
-                  Gustave - L'Aventurier
-                </option>
-                <option value="Julie - L'Aventurière">
-                  Julie - L'Aventurière
-                </option>
-                <option value="Henry - L'Aventurier">
-                  Henry - L'Aventurier
-                </option>
-                <option value="Zoé - L'Aventurière">Zoé - L'Aventurière</option>
-              </optgroup>
-              <optgroup label="Exploration">
-                <option value="Flora - L'Exploratrice">
-                  Flora - L'Exploratrice
-                </option>
-                <option value="Denver - L'Explorateur">
-                  Denver - L'Explorateur
-                </option>
-                <option value="Inaya - L'Exploratrice">
-                  Inaya - L'Exploratrice
-                </option>
-                <option value="Seth - L'Explorateur">
-                  Seth - L'Explorateur
-                </option>
-              </optgroup>
-              <optgroup label="Visite">
-                <option value="Lance - Le Visiteur">Lance - Le Visiteur</option>
-                <option value="Nadia - La Visiteuse">
-                  Nadia - La Visiteuse
-                </option>
-                <option value="Xavier - Le Visiteur">
-                  Xavier - Le Visiteur
-                </option>
-                <option value="Ornella - La Visiteuse">
-                  Ornella - La Visiteuse
-                </option>
-              </optgroup>
+            <div id="container-photographer-label-img">
+              <div id="container-photographer-laber">
+                <label for="photographer"
+                  ><span id="text-photographer-color"
+                    >Profil du Photographe</span
+                  ><span id="text-photographer-star"></span
+                ></label>
+                <select name="photographer" id="photographer">
+                  <option value="">Selectionner un Profil</option>
+                  <optgroup label="Aventure">
+                    <option value="Gustave - L'Aventurier">
+                      Gustave - L'Aventurier
+                    </option>
+                    <option value="Julie - L'Aventurière">
+                      Julie - L'Aventurière
+                    </option>
+                    <option value="Henry - L'Aventurier">
+                      Henry - L'Aventurier
+                    </option>
+                    <option value="Zoé - L'Aventurière">
+                      Zoé - L'Aventurière
+                    </option>
+                  </optgroup>
+                  <optgroup label="Exploration">
+                    <option value="Flora - L'Exploratrice">
+                      Flora - L'Exploratrice
+                    </option>
+                    <option value="Denver - L'Explorateur">
+                      Denver - L'Explorateur
+                    </option>
+                    <option value="Inaya - L'Exploratrice">
+                      Inaya - L'Exploratrice
+                    </option>
+                    <option value="Seth - L'Explorateur">
+                      Seth - L'Explorateur
+                    </option>
+                  </optgroup>
+                  <optgroup label="Visite">
+                    <option value="Lance - Le Visiteur">
+                      Lance - Le Visiteur
+                    </option>
+                    <option value="Nadia - La Visiteuse">
+                      Nadia - La Visiteuse
+                    </option>
+                    <option value="Xavier - Le Visiteur">
+                      Xavier - Le Visiteur
+                    </option>
+                    <option value="Ornella - La Visiteuse">
+                      Ornella - La Visiteuse
+                    </option>
+                  </optgroup>
 
-              <optgroup label="Voyage">
-                <option value="Cerise - La Voyageuse">
-                  Cerise - La Voyageuse
-                </option>
-                <option value="Philibert - Le Voyageur">
-                  Philibert - Le Voyageur
-                </option>
-                <option value="Roxane - La Voyageuse">
-                  Roxane - La Voyageuse
-                </option>
-                <option value="Yuu - Le Voyageur">Yuu - Le Voyageur</option>
-              </optgroup>
-            </select>
+                  <optgroup label="Voyage">
+                    <option value="Cerise - La Voyageuse">
+                      Cerise - La Voyageuse
+                    </option>
+                    <option value="Philibert - Le Voyageur">
+                      Philibert - Le Voyageur
+                    </option>
+                    <option value="Roxane - La Voyageuse">
+                      Roxane - La Voyageuse
+                    </option>
+                    <option value="Yuu - Le Voyageur">Yuu - Le Voyageur</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div id="container-photographer-img" class="photo-img-none"></div>
+            </div>
             <small id="text-info-photographer"></small>
           </div>
           <div class="form-group form-content">
