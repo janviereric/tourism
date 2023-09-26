@@ -69,7 +69,6 @@ module.exports = {
           from: "./src/assets/images/form-photos/form-villes/*",
           to: "assets/images/form-photos/form-villes/[name][ext]",
         },
-
         {
           from: "./src/assets/images/home-detail/home-deserts-detail/*",
           to: "assets/images/home-detail/home-deserts-detail/[name][ext]",
@@ -121,6 +120,10 @@ module.exports = {
         {
           from: "./src/assets/images/form-users/users-voyage/*",
           to: "assets/images/form-users/users-voyage/[name][ext]",
+        },
+        {
+          from: "./src/assets/images/form-small/form-deserts-small/*",
+          to: "assets/images/form-small/form-deserts-small/[name][ext]",
         },
       ],
     }),
