@@ -133,6 +133,10 @@ module.exports = {
           from: "./src/assets/images/form-small/form-plages-small/*",
           to: "assets/images/form-small/form-plages-small/[name][ext]",
         },
+        {
+          from: "./src/assets/images/form-small/form-villes-small/*",
+          to: "assets/images/form-small/form-villes-small/[name][ext]",
+        },
       ],
     }),
     new HtmlWebpackPlugin({
