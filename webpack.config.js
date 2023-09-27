@@ -149,6 +149,10 @@ module.exports = {
           from: "./src/assets/images/form-users-small/form-users-visite-small/*",
           to: "assets/images/form-users-small/form-users-visite-small/[name][ext]",
         },
+        {
+          from: "./src/assets/images/form-users-small/form-users-voyage-small/*",
+          to: "assets/images/form-users-small/form-users-voyage-small/[name][ext]",
+        },
       ],
     }),
     new HtmlWebpackPlugin({
