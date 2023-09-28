@@ -367,123 +367,123 @@ selectPhotographer.addEventListener("change", (event) => {
       );
       selectPhotographer.classList.remove("width-select-photographer");
       containerPhotographerImg.classList.add("photo-img-none");
-      containerPhotographerImg.classList.remove("photo-img-center");
+      containerPhotographerImg.classList.remove("container-form-user-img");
       formPhotographerImg.src = "";
       break;
     }
     case "Gustave - L'Aventurier": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+        "./assets/images/form-users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
       break;
     }
     case "Julie - L'Aventurière": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+        "./assets/images/form-users-small/form-users-aventure-small/julie-aventuriere-small.jpg";
       break;
     }
     case "Henry - L'Aventurier": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+        "./assets/images/form-users-small/form-users-aventure-small/henry-aventurier-small.jpg";
       break;
     }
     case "Zoé - L'Aventurière": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+        "./assets/images/form-users-small/form-users-aventure-small/zoe-aventuriere-small.jpg";
       break;
     }
 
     case "Flora - L'Exploratrice": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+        "./assets/images/form-users-small/form-users-exploration-small/flora-exploratrice-small.jpg";
       break;
     }
     case "Denver - L'Explorateur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+        "./assets/images/form-users-small/form-users-exploration-small/denver-explorateur-small.jpg";
       break;
     }
     case "Inaya - L'Exploratrice": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+        "./assets/images/form-users-small/form-users-exploration-small/inaya-exploratrice-small.jpg";
       break;
     }
     case "Seth - L'Explorateur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+        "./assets/images/form-users-small/form-users-exploration-small/seth-explorateur-small.jpg";
       break;
     }
 
     case "Lance - Le Visiteur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+        "./assets/images/form-users-form/form-users-visite-small/lance-visiteur-small.jpg";
       break;
     }
     case "Nadia - La Visiteuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+        "./assets/images/form-users-form/form-users-visite-small/nadia-visiteuse-small.jpg";
       break;
     }
     case "Xavier - Le Visiteur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+        "./assets/images/form-users-form/form-users-visite-small/xavier-visiteur-small.jpg";
       break;
     }
     case "Ornella - La Visiteuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+        "./assets/images/form-users-form/form-users-visite-small/ornella-visiteuse-small.jpg";
       break;
     }
 
     case "Cerise - La Voyageuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+        "./assets/images/form-users-small/form-users-voyage-small/cerise-voyageuse-small.jpg";
       break;
     }
     case "Philibert - Le Voyageur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+        "./assets/images/form-users-small/form-users-voyage-small/philibert-voyageur-small.jpg";
       break;
     }
     case "Roxane - La Voyageuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+        "./assets/images/form-users-small/form-users-voyage-small/roxane-voyageuse-small.jpg";
       break;
     }
     case "Yuu - Le Voyageur": {
       containerPhotographerImg.classList.remove("photo-img-none");
-      containerPhotographerImg.classList.add("photo-img-center");
+      containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+        "./assets/images/form-users-small/form-users-voyage-small/yuu-voyageur-small.jpg";
       break;
     }
   }

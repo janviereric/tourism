@@ -93,8 +93,6 @@ main {
 
 .container-photo-label-img {
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   justify-content: space-between;
   .container-photo-laber {
     display: flex;
@@ -113,31 +111,25 @@ main {
 }
 
 .width-select-photographer {
-  width: 31rem;
+  width: 31.5rem;
 }
 
 .container-photographer-label-img {
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  justify-content: space-between;
   .container-photographer-laber {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
-  .photo-img-center {
+  .container-form-user-img {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    .img-padding {
-      width: 22rem;
-      height: 15rem;
-      margin-left: 6rem;
-      padding: 0.5rem;
-      box-shadow: var(--shadow);
-    }
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
   }
 }
 
