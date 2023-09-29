@@ -33,6 +33,7 @@ selectPicture.addEventListener("change", (event) => {
   const formPhotoImg = containerPhotoImg.querySelector("img");
   const selectPictureName = event.target.value;
   console.log(selectPictureName);
+
   switch (selectPictureName) {
     case "": {
       containerPhotoLabelImg.classList.remove("container-photo-label-img");
@@ -433,28 +434,28 @@ selectPhotographer.addEventListener("change", (event) => {
       containerPhotographerImg.classList.remove("photo-img-none");
       containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users-form/form-users-visite-small/lance-visiteur-small.jpg";
+        "./assets/images/form-users-small/form-users-visite-small/lance-visiteur-small.jpg";
       break;
     }
     case "Nadia - La Visiteuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
       containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users-form/form-users-visite-small/nadia-visiteuse-small.jpg";
+        "./assets/images/form-users-small/form-users-visite-small/nadia-visiteuse-small.jpg";
       break;
     }
     case "Xavier - Le Visiteur": {
       containerPhotographerImg.classList.remove("photo-img-none");
       containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users-form/form-users-visite-small/xavier-visiteur-small.jpg";
+        "./assets/images/form-users-small/form-users-visite-small/xavier-visiteur-small.jpg";
       break;
     }
     case "Ornella - La Visiteuse": {
       containerPhotographerImg.classList.remove("photo-img-none");
       containerPhotographerImg.classList.add("container-form-user-img");
       formPhotographerImg.src =
-        "./assets/images/form-users-form/form-users-visite-small/ornella-visiteuse-small.jpg";
+        "./assets/images/form-users-small/form-users-visite-small/ornella-visiteuse-small.jpg";
       break;
     }
 
@@ -486,6 +487,66 @@ selectPhotographer.addEventListener("change", (event) => {
         "./assets/images/form-users-small/form-users-voyage-small/yuu-voyageur-small.jpg";
       break;
     }
+  }
+});
+
+const selectContent = document.querySelector("select[name='content']");
+selectContent.addEventListener("change", (event) => {
+  const contentValue = event.target.value;
+  const contentNote = selectContent.options[selectContent.selectedIndex].text;
+  console.log(contentNote);
+  const containerDescriptionNote = document.querySelector(
+    "#container-description-note"
+  );
+
+  if (contentValue) {
+    containerDescriptionNote.classList.add("container-content-note");
+    containerDescriptionNote.innerHTML = `<textarea class="content-note">${contentValue}</textarea>`;
+    const textArea = containerDescriptionNote.querySelector("textarea");
+    let valueTextArea = textArea.value;
+    textArea.addEventListener("input", (event) => {
+      switch (contentNote) {
+        case `Une Mauvaise Description \u2605\u2606\u2606\u2606\u2606`: {
+          const newValueContentNote =
+            document.querySelector(".content-mauvaise");
+          valueTextArea = event.target.value;
+          newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          break;
+        }
+        case `Une Médiocre Description \u2605\u2605\u2606\u2606\u2606`: {
+          const newValueContentNote =
+            document.querySelector(".content-mediocre");
+          valueTextArea = event.target.value;
+          newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          break;
+        }
+        case `Une Description Satisfaisante \u2605\u2605\u2605\u2606\u2606`: {
+          const newValueContentNote = document.querySelector(
+            ".content-satisfaisante"
+          );
+          valueTextArea = event.target.value;
+          newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          break;
+        }
+        case `Une Bonne Description \u2605\u2605\u2605\u2605\u2606`: {
+          const newValueContentNote = document.querySelector(".content-bonne");
+          valueTextArea = event.target.value;
+          newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          break;
+        }
+        case `Une Excellente Description \u2605\u2605\u2605\u2605\u2605`: {
+          const newValueContentNote = document.querySelector(
+            ".content-excellente"
+          );
+          valueTextArea = event.target.value;
+          newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          break;
+        }
+      }
+    });
+  } else {
+    containerDescriptionNote.classList.remove("container-content-note");
+    containerDescriptionNote.innerHTML = "";
   }
 });
 

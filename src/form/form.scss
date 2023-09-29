@@ -133,6 +133,18 @@ main {
   }
 }
 
+.container-content-note {
+  margin-top: 1rem;
+  .content-note {
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    resize: none;
+    font-family: var(--form);
+  }
+}
+
 // js end
 
 #text-info-category {
