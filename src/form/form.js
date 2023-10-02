@@ -32,7 +32,6 @@ selectPicture.addEventListener("change", (event) => {
   containerPhotoLabel.classList.add("container-photo-laber");
   const formPhotoImg = containerPhotoImg.querySelector("img");
   const selectPictureName = event.target.value;
-  console.log(selectPictureName);
 
   switch (selectPictureName) {
     case "": {
@@ -494,7 +493,6 @@ const selectContent = document.querySelector("select[name='content']");
 selectContent.addEventListener("change", (event) => {
   const contentValue = event.target.value;
   const contentNote = selectContent.options[selectContent.selectedIndex].text;
-  console.log(contentNote);
   const containerDescriptionNote = document.querySelector(
     "#container-description-note"
   );
@@ -506,38 +504,37 @@ selectContent.addEventListener("change", (event) => {
     let valueTextArea = textArea.value;
     textArea.addEventListener("input", (event) => {
       switch (contentNote) {
-        case `Une Mauvaise Description \u2605\u2606\u2606\u2606\u2606`: {
+        case `Description Mauvais \u2605\u2606\u2606\u2606\u2606`: {
           const newValueContentNote =
-            document.querySelector(".content-mauvaise");
+            document.querySelector(".content-mauvais");
           valueTextArea = event.target.value;
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
           break;
         }
-        case `Une Médiocre Description \u2605\u2605\u2606\u2606\u2606`: {
+        case `Description Médiocre \u2605\u2605\u2606\u2606\u2606`: {
           const newValueContentNote =
             document.querySelector(".content-mediocre");
           valueTextArea = event.target.value;
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
           break;
         }
-        case `Une Description Satisfaisante \u2605\u2605\u2605\u2606\u2606`: {
+        case `Description Satisfaisant \u2605\u2605\u2605\u2606\u2606`: {
           const newValueContentNote = document.querySelector(
-            ".content-satisfaisante"
+            ".content-satisfaisant"
           );
           valueTextArea = event.target.value;
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
           break;
         }
-        case `Une Bonne Description \u2605\u2605\u2605\u2605\u2606`: {
-          const newValueContentNote = document.querySelector(".content-bonne");
+        case `Description Bien \u2605\u2605\u2605\u2605\u2606`: {
+          const newValueContentNote = document.querySelector(".content-bien");
           valueTextArea = event.target.value;
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
           break;
         }
-        case `Une Excellente Description \u2605\u2605\u2605\u2605\u2605`: {
-          const newValueContentNote = document.querySelector(
-            ".content-excellente"
-          );
+        case `Description Excellent \u2605\u2605\u2605\u2605\u2605`: {
+          const newValueContentNote =
+            document.querySelector(".content-excellent");
           valueTextArea = event.target.value;
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
           break;
