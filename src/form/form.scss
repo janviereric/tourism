@@ -103,8 +103,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     padding: 0.5rem;
     box-shadow: var(--shadow);
   }
@@ -126,10 +124,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    padding: 0.5rem;
+    margin-right: 5rem;
     box-shadow: var(--shadow);
+    height: 14.5rem;
+    width: 14.5rem;
+    border-radius: 10rem;
+    img {
+      height: 14rem;
+      width: 14rem;
+      border-radius: 10rem;
+    }
   }
 }
 
