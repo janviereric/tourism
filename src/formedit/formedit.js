@@ -1,5 +1,5 @@
 import "../assets/sass/styles.scss";
-import "./editform.scss";
+import "./formedit.scss";
 
 const params = new URL(location.href);
 const photoId = params.searchParams.get("id");
@@ -775,7 +775,7 @@ form.addEventListener("submit", async (event) => {
 
 buttonCancel.addEventListener("click", (event) => {
   event.stopPropagation();
-  location.assign(`./detailform.html?id=${photoId}`);
+  location.assign(`./formdetail.html?id=${photoId}`);
 });
 
 const formIsValid = (photo) => {

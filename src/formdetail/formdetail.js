@@ -1,5 +1,5 @@
 import "../assets/sass/styles.scss";
-import "./detailform.scss";
+import "./formdetail.scss";
 
 const containerPhotoName = document.querySelector(".container-photo-name");
 const containerPhotoImg = document.querySelector(".container-photo-img");
@@ -8,7 +8,7 @@ const containerDate = document.querySelector(".container-date");
 const containerContent = document.querySelector(".container-content");
 const containerButton = document.querySelector(".container-button");
 
-const displayDetailFormPhoto = async () => {
+const displayFormPhotoDetail = async () => {
   try {
     const params = new URL(location.href);
     const photoId = params.searchParams.get("id");
@@ -20,10 +20,10 @@ const displayDetailFormPhoto = async () => {
         containerPhotoImg.innerHTML = `<img src="${formPhoto.picture}" alt="${formPhoto.picture}" />`;
         containerUser.innerHTML = `
           <div class="container-user-img">
-          <img src="${formPhoto.photographer}" /> 
+          <img id="user-img" src="${formPhoto.photographer}" /> 
           </div>
           <div class="container-user-name">
-              <p> ${formPhoto.photographer} </p>
+              <p id="user-name"> ${formPhoto.photographer} </p>
           </div>`;
         containerDate.innerHTML = `Posté le ${new Date(
           formPhoto.createdAt
@@ -332,10 +332,34 @@ const displayDetailFormPhoto = async () => {
           }
         }
 
+        // const buttonUserImg = containerUser.querySelector("#user-img");
+        // buttonUserImg.setAttribute(
+        //   "data-username",
+        //   `${formPhoto.photographer}`
+        // );
+        // buttonUserImg.addEventListener("click", (event) => {
+        //   event.stopPropagation();
+        //   const target = event.target;
+        //   const formUserName = target.dataset.username;
+        //   location.assign(`./userdetail.html?name=${formUserName}`);
+        // });
+
+        // const buttonUserName = containerUser.querySelector("#user-name");
+        // buttonUserName.setAttribute(
+        //   "data-username",
+        //   `${formPhoto.photographer}`
+        // );
+        // buttonUserName.addEventListener("click", (event) => {
+        //   event.stopPropagation();
+        //   const target = event.target;
+        //   const formUserName = target.dataset.username;
+        //   location.assign(`./userdetail.html?name=${formUserName}`);
+        // });
+
         const buttonEdit = containerButton.querySelector(".button-edit");
         buttonEdit.addEventListener("click", (event) => {
           event.stopPropagation();
-          location.assign(`./editform.html?id=${photoId}`);
+          location.assign(`./formedit.html?id=${photoId}`);
         });
 
         const buttonDelete = containerButton.querySelector(".button-delete");
@@ -360,4 +384,4 @@ const displayDetailFormPhoto = async () => {
   }
 };
 
-displayDetailFormPhoto();
+displayFormPhotoDetail();

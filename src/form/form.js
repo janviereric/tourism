@@ -587,7 +587,6 @@ const formIsValid = (photo) => {
       !photo.picture &&
       (photo.category || photo.photographer || photo.content)
     ) {
-      console.log(photo.picture);
       textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
       setTimeout(() => {
         textInfoPicture.innerHTML = "";

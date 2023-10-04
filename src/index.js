@@ -28,7 +28,7 @@ const createHomePhotosElement = (homePhoto, index) => {
   homePhotoContainer.addEventListener("click", (event) => {
     const target = event.target;
     const homePhotoId = target.dataset.id;
-    window.location.assign(`./detailhome.html?id=${homePhotoId}`);
+    location.assign(`./homedetail.html?id=${homePhotoId}`);
   });
   return homePhotoContainer;
 };
@@ -47,7 +47,7 @@ const createFormPhotosElement = (formPhotosArray) => {
     formPhotoContainer.addEventListener("click", (event) => {
       const target = event.target;
       const formPhotoId = target.dataset.id;
-      location.assign(`./detailform.html?id=${formPhotoId}`);
+      location.assign(`./formdetail.html?id=${formPhotoId}`);
     });
 
     switch (formPhoto.picture) {

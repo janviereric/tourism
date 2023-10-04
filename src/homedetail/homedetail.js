@@ -1,5 +1,5 @@
 import "../assets/sass/styles.scss";
-import "./detailhome.scss";
+import "./homedetail.scss";
 import { homePhotosArray } from "../assets/javascripts/home-photos.js";
 
 const containerPhotoName = document.querySelector(".container-photo-name");
@@ -8,7 +8,7 @@ const containerUser = document.querySelector(".container-user");
 const containerDate = document.querySelector(".container-date");
 const containerContent = document.querySelector(".container-content");
 
-const diplayDetailHomePhoto = async () => {
+const diplayHomePhotoDetail = async () => {
   try {
     const params = new URL(location.href);
     const photoId = params.searchParams.get("id");
@@ -30,4 +30,4 @@ const diplayDetailHomePhoto = async () => {
   }
 };
 
-diplayDetailHomePhoto();
+diplayHomePhotoDetail();
