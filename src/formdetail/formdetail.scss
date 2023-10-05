@@ -32,9 +32,17 @@
       height: 5.2rem;
       width: 5.2rem;
       box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        height: 5.2rem;
+        width: 5.2rem;
+        background-color: var(--tertiary);
+        transition: all 0.2s;
+      }
       img {
         border-radius: 2.5rem;
-        height: 5rem;
+        height: 5.1rem;
         width: 5rem;
       }
     }
@@ -43,8 +51,15 @@
       justify-content: center;
       align-items: center;
       margin-left: 2rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      p:hover {
+        color: var(--secondary);
+        transition: all 0.2s;
+      }
     }
   }
+
   .container-date {
     display: flex;
     justify-content: center;

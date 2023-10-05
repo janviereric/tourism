@@ -1,0 +1,28 @@
+#container-user-detail {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-user-name {
+  margin-bottom: 1rem;
+}
+
+#container-user-img {
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+  img {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: -0.4rem;
+  }
+}
+
+#container-user-profile {
+  font-family: var(--form);
+  margin-bottom: 3rem;
+}

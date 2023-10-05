@@ -332,29 +332,29 @@ const displayFormPhotoDetail = async () => {
           }
         }
 
-        // const buttonUserImg = containerUser.querySelector("#user-img");
-        // buttonUserImg.setAttribute(
-        //   "data-username",
-        //   `${formPhoto.photographer}`
-        // );
-        // buttonUserImg.addEventListener("click", (event) => {
-        //   event.stopPropagation();
-        //   const target = event.target;
-        //   const formUserName = target.dataset.username;
-        //   location.assign(`./userdetail.html?name=${formUserName}`);
-        // });
+        const buttonUserImg = containerUser.querySelector("#user-img");
+        buttonUserImg.setAttribute(
+          "data-username",
+          `${formPhoto.photographer}`
+        );
+        buttonUserImg.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const target = event.target;
+          const formUserName = target.dataset.username;
+          location.assign(`./userdetail.html?name=${formUserName}`);
+        });
 
-        // const buttonUserName = containerUser.querySelector("#user-name");
-        // buttonUserName.setAttribute(
-        //   "data-username",
-        //   `${formPhoto.photographer}`
-        // );
-        // buttonUserName.addEventListener("click", (event) => {
-        //   event.stopPropagation();
-        //   const target = event.target;
-        //   const formUserName = target.dataset.username;
-        //   location.assign(`./userdetail.html?name=${formUserName}`);
-        // });
+        const buttonUserName = containerUser.querySelector("#user-name");
+        buttonUserName.setAttribute(
+          "data-username",
+          `${formPhoto.photographer}`
+        );
+        buttonUserName.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const target = event.target;
+          const formUserName = target.dataset.username;
+          location.assign(`./userdetail.html?name=${formUserName}`);
+        });
 
         const buttonEdit = containerButton.querySelector(".button-edit");
         buttonEdit.addEventListener("click", (event) => {

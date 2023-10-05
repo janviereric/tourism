@@ -9,7 +9,7 @@ module.exports = {
     form: path.join(__dirname, "src/form/form.js"),
     homedetail: path.join(__dirname, "src/homedetail/homedetail.js"),
     formdetail: path.join(__dirname, "src/formdetail/formdetail.js"),
-    // userdetail: path.join(__dirname, "src/userdetail/userdetail.js"),
+    userdetail: path.join(__dirname, "src/userdetail/userdetail.js"),
     formedit: path.join(__dirname, "src/formedit/formedit.js"),
     header: path.join(__dirname, "src/assets/javascripts/header.js"),
   },
@@ -176,11 +176,11 @@ module.exports = {
       template: path.join(__dirname, "./src/formdetail/formdetail.html"),
       chunks: ["formdetail", "header"],
     }),
-    // new HtmlWebpackPlugin({
-    //   filename: "./userdetail.html",
-    //   template: path.join(__dirname, "./src/userdetail/userdetail.html"),
-    //   chunks: ["userdetail", "header"],
-    // }),
+    new HtmlWebpackPlugin({
+      filename: "./userdetail.html",
+      template: path.join(__dirname, "./src/userdetail/userdetail.html"),
+      chunks: ["userdetail", "header"],
+    }),
     new HtmlWebpackPlugin({
       filename: "./formedit.html",
       template: path.join(__dirname, "./src/formedit/formedit.html"),
