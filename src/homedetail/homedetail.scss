@@ -21,10 +21,10 @@
       margin-bottom: -0.4rem;
     }
   }
-  .container-user {
+  .container-admin {
     display: flex;
     margin-bottom: 3rem;
-    .container-user-img {
+    .container-admin-img {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -32,17 +32,31 @@
       height: 5.2rem;
       width: 5.2rem;
       box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        height: 5.2rem;
+        width: 5.2rem;
+        background-color: var(--tertiary);
+        transition: all 0.2s;
+      }
       img {
         border-radius: 2.5rem;
         height: 5rem;
         width: 5rem;
       }
     }
-    .container-user-name {
+    .container-admin-name {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 2rem;
+      transition: all 0.2s;
+      p:hover {
+        cursor: pointer;
+        color: var(--secondary);
+        transition: all 0.2s;
+      }
     }
   }
   .container-date {
@@ -59,12 +73,7 @@
     margin-bottom: 5rem;
     p {
       padding: 2rem;
+      font-family: var(--form);
     }
-  }
-  .container-button {
-    width: 32rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
   }
 }
