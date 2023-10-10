@@ -108,20 +108,20 @@ module.exports = {
           to: "assets/images/admins/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users/users-aventure/*",
-          to: "assets/images/form-users/users-aventure/[name][ext]",
+          from: "./src/assets/images/users/users-aventure/*",
+          to: "assets/images/users/users-aventure/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users/users-exploration/*",
-          to: "assets/images/form-users/users-exploration/[name][ext]",
+          from: "./src/assets/images/users/users-exploration/*",
+          to: "assets/images/users/users-exploration/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users/users-visite/*",
-          to: "assets/images/form-users/users-visite/[name][ext]",
+          from: "./src/assets/images/users/users-visite/*",
+          to: "assets/images/users/users-visite/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users/users-voyage/*",
-          to: "assets/images/form-users/users-voyage/[name][ext]",
+          from: "./src/assets/images/users/users-voyage/*",
+          to: "assets/images/users/users-voyage/[name][ext]",
         },
         {
           from: "./src/assets/images/form-small/form-deserts-small/*",
@@ -140,20 +140,20 @@ module.exports = {
           to: "assets/images/form-small/form-villes-small/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users-small/form-users-aventure-small/*",
-          to: "assets/images/form-users-small/form-users-aventure-small/[name][ext]",
+          from: "./src/assets/images/users-small/users-aventure-small/*",
+          to: "assets/images/users-small/users-aventure-small/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users-small/form-users-exploration-small/*",
-          to: "assets/images/form-users-small/form-users-exploration-small/[name][ext]",
+          from: "./src/assets/images/users-small/users-exploration-small/*",
+          to: "assets/images/users-small/users-exploration-small/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users-small/form-users-visite-small/*",
-          to: "assets/images/form-users-small/form-users-visite-small/[name][ext]",
+          from: "./src/assets/images/users-small/users-visite-small/*",
+          to: "assets/images/users-small/users-visite-small/[name][ext]",
         },
         {
-          from: "./src/assets/images/form-users-small/form-users-voyage-small/*",
-          to: "assets/images/form-users-small/form-users-voyage-small/[name][ext]",
+          from: "./src/assets/images/users-small/users-voyage-small/*",
+          to: "assets/images/users-small/users-voyage-small/[name][ext]",
         },
       ],
     }),

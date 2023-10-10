@@ -249,85 +249,85 @@ const displayFormPhotoDetail = async () => {
         switch (formPhoto.photographer) {
           case "Gustave - L'Aventurier": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+              "./assets/images/users/users-aventure/gustave-aventurier.jpg";
             break;
           }
           case "Julie - L'Aventurière": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+              "./assets/images/users/users-aventure/julie-aventuriere.jpg";
             break;
           }
           case "Henry - L'Aventurier": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+              "./assets/images/users/users-aventure/henry-aventurier.jpg";
             break;
           }
           case "Zoé - L'Aventurière": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+              "./assets/images/users/users-aventure/zoe-aventuriere.jpg";
             break;
           }
 
           case "Flora - L'Exploratrice": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+              "./assets/images/users/users-exploration/flora-exploratrice.jpg";
             break;
           }
           case "Denver - L'Explorateur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+              "./assets/images/users/users-exploration/denver-explorateur.jpg";
             break;
           }
           case "Inaya - L'Exploratrice": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+              "./assets/images/users/users-exploration/inaya-exploratrice.jpg";
             break;
           }
           case "Seth - L'Explorateur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+              "./assets/images/users/users-exploration/seth-explorateur.jpg";
             break;
           }
 
           case "Lance - Le Visiteur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+              "./assets/images/users/users-visite/lance-visiteur.jpg";
             break;
           }
           case "Nadia - La Visiteuse": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+              "./assets/images/users/users-visite/nadia-visiteuse.jpg";
             break;
           }
           case "Xavier - Le Visiteur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+              "./assets/images/users/users-visite/xavier-visiteur.jpg";
             break;
           }
           case "Ornella - La Visiteuse": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+              "./assets/images/users/users-visite/ornella-visiteuse.jpg";
             break;
           }
 
           case "Cerise - La Voyageuse": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+              "./assets/images/users/users-voyage/cerise-voyageuse.jpg";
             break;
           }
           case "Philibert - Le Voyageur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+              "./assets/images/users/users-voyage/philibert-voyageur.jpg";
             break;
           }
           case "Roxane - La Voyageuse": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+              "./assets/images/users/users-voyage/roxane-voyageuse.jpg";
             break;
           }
           case "Yuu - Le Voyageur": {
             userPhotoImg.src =
-              "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+              "./assets/images/users/users-voyage/yuu-voyageur.jpg";
             break;
           }
         }
