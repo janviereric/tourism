@@ -137,8 +137,29 @@ main {
   }
 }
 
-.container-content-note {
+.content-note-none {
+  display: none;
+}
+
+#container-description-note {
   margin-top: 1rem;
+  #shallow-content-value {
+    border: 0.1rem solid var(--dark);
+    border-radius: 0.25rem;
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+    p {
+      font-family: var(--form);
+      font-size: 1.3rem;
+      span {
+        font-style: italic;
+        font-size: 1.3rem;
+        color: var(--primary);
+      }
+    }
+  }
   .content-note {
     height: 15rem;
     width: 100%;
@@ -146,6 +167,7 @@ main {
     letter-spacing: 0.1rem;
     resize: none;
     font-family: var(--form);
+    font-weight: 100;
   }
 }
 

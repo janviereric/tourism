@@ -26,6 +26,7 @@ containerPhotoLabelImg.classList.remove("container-photo-label-img");
 containerPhotoLabel.classList.add("flex-column");
 containerPhotoLabel.classList.remove("container-photo-laber");
 const selectPicture = document.querySelector("select[name='picture']");
+
 selectPicture.addEventListener("change", (event) => {
   containerPhotoLabelImg.classList.add("container-photo-label-img");
   containerPhotoLabel.classList.remove("flex-column");
@@ -375,7 +376,7 @@ selectPhotographer.addEventListener("change", (event) => {
       containerPhotographerImg.classList.remove("photo-img-none");
       containerPhotographerImg.classList.add("container-user-img");
       formPhotographerImg.src =
-        "./assets/images/users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
+        "./assets/images/users-small/users-aventure-small/gustave-aventurier-small.jpg";
       break;
     }
     case "Julie - L'Aventurière": {
@@ -490,17 +491,32 @@ selectPhotographer.addEventListener("change", (event) => {
 });
 
 const selectContent = document.querySelector("select[name='content']");
+const containerDescriptionNote = document.querySelector(
+  "#container-description-note"
+);
+containerDescriptionNote.innerHTML =
+  "<textarea class='content-note'></textarea>";
+
+const textArea = containerDescriptionNote.querySelector("textarea");
+textArea.classList.add("content-note-none");
+
 selectContent.addEventListener("change", (event) => {
   const contentValue = event.target.value;
   const contentNote = selectContent.options[selectContent.selectedIndex].text;
-  const containerDescriptionNote = document.querySelector(
-    "#container-description-note"
-  );
-
   if (contentValue) {
-    containerDescriptionNote.classList.add("container-content-note");
-    containerDescriptionNote.innerHTML = `<textarea class="content-note">${contentValue}</textarea>`;
-    const textArea = containerDescriptionNote.querySelector("textarea");
+    containerDescriptionNote.innerHTML = `<div id="shallow-content-value"><p> ${contentValue} <span>(Modifier le contenu textuel comme vous voulez)</span></p></div>`;
+    const shallowContentValue = containerDescriptionNote.querySelector(
+      "#shallow-content-value"
+    );
+    shallowContentValue.addEventListener("click", (event) => {
+      event.stopPropagation();
+      shallowContentValue.classList.add("content-note-none");
+      containerDescriptionNote.innerHTML = `<textarea class='content-note'>${contentValue}</textarea>`;
+      const textArea = containerDescriptionNote.querySelector("textarea");
+      textArea.focus();
+      textArea.setSelectionRange(textArea.value.length, textArea.value.length);
+    });
+
     let valueTextArea = textArea.value;
     textArea.addEventListener("input", (event) => {
       switch (contentNote) {
