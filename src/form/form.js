@@ -504,7 +504,7 @@ selectContent.addEventListener("change", (event) => {
   const contentValue = event.target.value;
   const contentNote = selectContent.options[selectContent.selectedIndex].text;
   if (contentValue) {
-    containerDescriptionNote.innerHTML = `<div id="shallow-content-value"><p> ${contentValue} <span>(Modifier le contenu textuel comme vous voulez)</span></p></div>`;
+    containerDescriptionNote.innerHTML = `<div id="shallow-content-value"><p> ${contentValue} <span>(Cliquez ici pour modifier le contenu textuel comme vous voulez)</span></p></div>`;
     const shallowContentValue = containerDescriptionNote.querySelector(
       "#shallow-content-value"
     );

@@ -2,7 +2,9 @@ import { async } from "regenerator-runtime";
 import { homePhotosArray } from "./assets/javascripts/home-photos.js";
 import "./assets/sass/styles.scss";
 import "./index.scss";
+
 const photosContainer = document.querySelector("#photos-container");
+// const categoriesMenu = document.querySelector("#categories-menu");
 
 ////////////////////////////// home start //////////////////////////////
 const displayHomePhotos = async () => {
@@ -32,6 +34,34 @@ const createHomePhotosElement = (homePhoto, index) => {
   });
   return homePhotoContainer;
 };
+
+// const displayMenuCategories = (categoriesArray) => {
+//   const liElements = categoriesArray.map((categoryElement) => {
+//     const li = document.createElement("li");
+//     li.innerHTML = `<li>${categoryElement[0]} (${categoryElement[1]})</li>`;
+//     return li;
+//   });
+//   categoriesMenu.innerHTML = "";
+//   categoriesMenu.append(...liElements);
+// };
+
+// const createMenuCategories = (homePhotoContainer) => {
+//   const categories = homePhotosArray.reduce((acc, homePhoto) => {
+//     if (acc[homePhoto.category]) {
+//       acc[homePhoto.category]++;
+//     } else {
+//       acc[homePhoto.category] = 1;
+//     }
+//     return acc;
+//   }, {});
+
+//   const categoriesArray = Object.keys(categories).map((category) => {
+//     return [category, categories[category]];
+//   });
+//   displayMenuCategories(categoriesArray);
+// };
+
+// createMenuCategories();
 ////////////////////////////// home start //////////////////////////////
 
 ////////////////////////////// form start //////////////////////////////

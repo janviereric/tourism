@@ -330,7 +330,7 @@ export const homePhotosArray = [
     detailSrc:
       "./assets/images/home-detail/home-forets-detail/foret-detail-hiver.jpg",
     picture: "Une Forêt (Hiver)",
-    category: "Paratge",
+    category: "Partage",
     photographer: "Ernest - L'Administrateur",
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le mardi 05 septembre 2023",
@@ -525,7 +525,7 @@ export const homePhotosArray = [
     detailSrc:
       "./assets/images/home-detail/home-deserts-detail/desert-detail-nmex-us.jpg",
     picture: "Un Désert au Nouveau-Mexique (USA)",
-    category: "Guide",
+    category: "Collection",
     photographer: "Alice - L'Administratrice",
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mardi 26 septembre 2023",

@@ -1,3 +1,36 @@
+.separator {
+  margin-bottom: 1rem;
+  border: 0.01rem solid var(--hint);
+}
+
+.container-bottom-menu {
+  padding: 0 1rem 1rem 1rem;
+  .container-categories-menu {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        color: var(--light);
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: var(--basic);
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+          transition: all 0.2s;
+          background-color: var(--secondary);
+          color: var(--light);
+        }
+      }
+    }
+  }
+}
+
+header .mobile-menu {
+  top: 9.1rem;
+}
+
 main {
   display: flex;
   justify-content: center;
