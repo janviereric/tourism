@@ -4,7 +4,19 @@ import "./assets/sass/styles.scss";
 import "./index.scss";
 
 const photosContainer = document.querySelector("#photos-container");
-// const categoriesMenu = document.querySelector("#categories-menu");
+const categoriesMenu = document.querySelector("#categories-menu");
+
+categoriesMenu.innerHTML = `
+<li id="guide-menu"></li>
+<li id="quete-menu"></li>
+<li id="collection-menu"></li>
+<li id="partage-menu"></li>
+`;
+
+const guideMenu = categoriesMenu.querySelector("#guide-menu");
+const queteMenu = categoriesMenu.querySelector("#quete-menu");
+const collectionMenu = categoriesMenu.querySelector("#collection-menu");
+const partageMenu = categoriesMenu.querySelector("#partage-menu");
 
 ////////////////////////////// home start //////////////////////////////
 const displayHomePhotos = async () => {
@@ -35,33 +47,22 @@ const createHomePhotosElement = (homePhoto, index) => {
   return homePhotoContainer;
 };
 
-// const displayMenuCategories = (categoriesArray) => {
-//   const liElements = categoriesArray.map((categoryElement) => {
-//     const li = document.createElement("li");
-//     li.innerHTML = `<li>${categoryElement[0]} (${categoryElement[1]})</li>`;
-//     return li;
-//   });
-//   categoriesMenu.innerHTML = "";
-//   categoriesMenu.append(...liElements);
-// };
+const createMenuCategoriesHome = () => {
+  const categoriesHome = homePhotosArray.reduce((acc, homePhoto) => {
+    if (acc[homePhoto.category]) {
+      acc[homePhoto.category]++;
+    } else {
+      acc[homePhoto.category] = 1;
+    }
+    return acc;
+  }, {});
+  guideMenu.innerText = `Guide (${categoriesHome.Guide})`;
+  queteMenu.innerText = `Quête (${categoriesHome.Quête})`;
+  collectionMenu.innerText = `Collection (${categoriesHome.Collection})`;
+  partageMenu.innerText = `Partage (${categoriesHome.Partage})`;
+};
 
-// const createMenuCategories = (homePhotoContainer) => {
-//   const categories = homePhotosArray.reduce((acc, homePhoto) => {
-//     if (acc[homePhoto.category]) {
-//       acc[homePhoto.category]++;
-//     } else {
-//       acc[homePhoto.category] = 1;
-//     }
-//     return acc;
-//   }, {});
-
-//   const categoriesArray = Object.keys(categories).map((category) => {
-//     return [category, categories[category]];
-//   });
-//   displayMenuCategories(categoriesArray);
-// };
-
-// createMenuCategories();
+createMenuCategoriesHome();
 ////////////////////////////// home start //////////////////////////////
 
 ////////////////////////////// form start //////////////////////////////
@@ -294,6 +295,57 @@ const createFormPhotosElement = (formPhotosArray) => {
 };
 displayHomePhotos();
 
+const createMenuCategories = (formPhotos) => {
+  const categoriesHome = homePhotosArray.reduce((acc, homePhoto) => {
+    if (acc[homePhoto.category]) {
+      acc[homePhoto.category]++;
+    } else {
+      acc[homePhoto.category] = 1;
+    }
+    return acc;
+  }, {});
+  const categoriesForm = formPhotos.reduce((acc, formPhoto) => {
+    if (acc[formPhoto.category]) {
+      acc[formPhoto.category]++;
+    } else {
+      acc[formPhoto.category] = 1;
+    }
+    return acc;
+  }, {});
+
+  if (!categoriesForm.Guide) {
+    guideMenu.innerHTML = `Guide (${categoriesHome.Guide} )`;
+  } else {
+    guideMenu.innerText = `Guide (${
+      categoriesHome.Guide + categoriesForm.Guide
+    } )`;
+  }
+
+  if (!categoriesForm.Quête) {
+    queteMenu.innerHTML = `Quête (${categoriesHome.Quête} )`;
+  } else {
+    queteMenu.innerText = `Quête (${
+      categoriesHome.Quête + categoriesForm.Quête
+    })`;
+  }
+
+  if (!categoriesForm.Collection) {
+    collectionMenu.innerText = `Collection (${categoriesHome.Collection})`;
+  } else {
+    collectionMenu.innerText = `Collection (${
+      categoriesHome.Collection + categoriesForm.Collection
+    })`;
+  }
+
+  if (!categoriesForm.Partage) {
+    partageMenu.innerText = `Partage (${categoriesHome.Partage})`;
+  } else {
+    partageMenu.innerText = `Partage (${
+      categoriesHome.Partage + categoriesForm.Partage
+    })`;
+  }
+};
+
 const fetchFormPhotos = async () => {
   try {
     const response = await fetch("https://restapi.fr/api/photos");
@@ -302,8 +354,9 @@ const fetchFormPhotos = async () => {
       formPhotos = [formPhotos];
     }
     createFormPhotosElement(formPhotos);
+    createMenuCategories(formPhotos);
   } catch (error) {
-    console.log(("error : ", error));
+    console.error(("error : ", error));
   }
 };
 fetchFormPhotos();
