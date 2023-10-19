@@ -523,8 +523,12 @@ selectContent.addEventListener("change", (event) => {
         case `Description Mauvais \u2605\u2606\u2606\u2606\u2606`: {
           const newValueContentNote =
             document.querySelector(".content-mauvais");
+          console.log(newValueContentNote);
           valueTextArea = event.target.value;
+          console.log(valueTextArea);
           newValueContentNote.setAttribute("value", `${valueTextArea}`);
+          console.log(newValueContentNote);
+          console.log(newValueContentNote.value);
           break;
         }
         case `Description Médiocre \u2605\u2605\u2606\u2606\u2606`: {

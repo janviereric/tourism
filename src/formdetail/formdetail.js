@@ -372,7 +372,7 @@ const displayFormPhotoDetail = async () => {
             );
             location.assign("./index.html");
           } catch (error) {
-            console.log("error : ", error);
+            console.error("error : ", error);
           }
         });
       } else {

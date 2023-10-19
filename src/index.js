@@ -333,14 +333,14 @@ const createMenuCategories = () => {
   }, {});
 
   if (!categoriesForm.Guide) {
-    guideMenu.innerHTML = `Guide (${categoriesHome.Guide} )`;
+    guideMenu.innerHTML = `Guide (${categoriesHome.Guide})`;
   } else {
     categoriesAll = categoriesHome.Guide + categoriesForm.Guide;
-    guideMenu.innerText = `Guide (${categoriesAll} )`;
+    guideMenu.innerHTML = `Guide (${categoriesAll})`;
   }
 
   if (!categoriesForm.Quête) {
-    queteMenu.innerHTML = `Quête (${categoriesHome.Quête} )`;
+    queteMenu.innerHTML = `Quête (${categoriesHome.Quête})`;
   } else {
     categoriesAll = categoriesHome.Quête + categoriesForm.Quête;
     queteMenu.innerText = `Quête (${categoriesAll})`;
