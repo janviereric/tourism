@@ -502,7 +502,7 @@ textArea.classList.add("content-note-none");
 
 selectContent.addEventListener("change", (event) => {
   const contentValue = event.target.value;
-  const contentNote = selectContent.options[selectContent.selectedIndex].text;
+  let contentNote = selectContent.options[selectContent.selectedIndex].text;
   if (contentValue) {
     containerDescriptionNote.innerHTML = `<div id="shallow-content-value"><p> ${contentValue} <span>(Cliquez ici pour modifier le contenu textuel)</span></p></div>`;
     const shallowContentValue = containerDescriptionNote.querySelector(
@@ -515,51 +515,47 @@ selectContent.addEventListener("change", (event) => {
       const textArea = containerDescriptionNote.querySelector("textarea");
       textArea.focus();
       textArea.setSelectionRange(textArea.value.length, textArea.value.length);
-    });
 
-    let valueTextArea = textArea.value;
-    textArea.addEventListener("input", (event) => {
-      switch (contentNote) {
-        case `Description Mauvais \u2605\u2606\u2606\u2606\u2606`: {
-          const newValueContentNote =
-            document.querySelector(".content-mauvais");
-          console.log(newValueContentNote);
-          valueTextArea = event.target.value;
-          console.log(valueTextArea);
-          newValueContentNote.setAttribute("value", `${valueTextArea}`);
-          console.log(newValueContentNote);
-          console.log(newValueContentNote.value);
-          break;
+      let valueTextArea = textArea.value;
+      textArea.addEventListener("input", (event) => {
+        switch (contentNote) {
+          case `Description Mauvais \u2605\u2606\u2606\u2606\u2606`: {
+            const newValueContentNote =
+              document.querySelector(".content-mauvais");
+            valueTextArea = event.target.value;
+            newValueContentNote.setAttribute("value", `${valueTextArea}`);
+            break;
+          }
+          case `Description Médiocre \u2605\u2605\u2606\u2606\u2606`: {
+            const newValueContentNote =
+              document.querySelector(".content-mediocre");
+            valueTextArea = event.target.value;
+            newValueContentNote.setAttribute("value", `${valueTextArea}`);
+            break;
+          }
+          case `Description Satisfaisant \u2605\u2605\u2605\u2606\u2606`: {
+            const newValueContentNote = document.querySelector(
+              ".content-satisfaisant"
+            );
+            valueTextArea = event.target.value;
+            newValueContentNote.setAttribute("value", `${valueTextArea}`);
+            break;
+          }
+          case `Description Bien \u2605\u2605\u2605\u2605\u2606`: {
+            const newValueContentNote = document.querySelector(".content-bien");
+            valueTextArea = event.target.value;
+            newValueContentNote.setAttribute("value", `${valueTextArea}`);
+            break;
+          }
+          case `Description Excellent \u2605\u2605\u2605\u2605\u2605`: {
+            const newValueContentNote =
+              document.querySelector(".content-excellent");
+            valueTextArea = event.target.value;
+            newValueContentNote.setAttribute("value", `${valueTextArea}`);
+            break;
+          }
         }
-        case `Description Médiocre \u2605\u2605\u2606\u2606\u2606`: {
-          const newValueContentNote =
-            document.querySelector(".content-mediocre");
-          valueTextArea = event.target.value;
-          newValueContentNote.setAttribute("value", `${valueTextArea}`);
-          break;
-        }
-        case `Description Satisfaisant \u2605\u2605\u2605\u2606\u2606`: {
-          const newValueContentNote = document.querySelector(
-            ".content-satisfaisant"
-          );
-          valueTextArea = event.target.value;
-          newValueContentNote.setAttribute("value", `${valueTextArea}`);
-          break;
-        }
-        case `Description Bien \u2605\u2605\u2605\u2605\u2606`: {
-          const newValueContentNote = document.querySelector(".content-bien");
-          valueTextArea = event.target.value;
-          newValueContentNote.setAttribute("value", `${valueTextArea}`);
-          break;
-        }
-        case `Description Excellent \u2605\u2605\u2605\u2605\u2605`: {
-          const newValueContentNote =
-            document.querySelector(".content-excellent");
-          valueTextArea = event.target.value;
-          newValueContentNote.setAttribute("value", `${valueTextArea}`);
-          break;
-        }
-      }
+      });
     });
   } else {
     containerDescriptionNote.classList.remove("container-content-note");
