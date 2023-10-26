@@ -23,7 +23,7 @@ containerGallery.innerHTML = `
 </fieldset>
 `;
 
-containerGalleryDetail.classList.add("noshow-detail");
+containerGalleryDetail.classList.add("off");
 containerGalleryDetail.innerHTML = `
 <fieldset class="fieldset-detail" >
   <legend></legend>
@@ -296,11 +296,11 @@ const createGalleryPhotos = () => {
       galleryPhotoElement.addEventListener("click", (event) => {
         const target = event.target;
         const formPhotoId = target.dataset.id;
-        containerGalleryDetail.classList.remove("noshow-detail");
-        containerUserImg.classList.add("noshow-detail");
-        containerUserName.classList.add("noshow-detail");
-        containerUserProfile.classList.add("noshow-detail");
-        containerGallery.classList.add("noshow-detail");
+        containerGalleryDetail.classList.remove("off");
+        containerUserImg.classList.add("off");
+        containerUserName.classList.add("off");
+        containerUserProfile.classList.add("off");
+        containerGallery.classList.add("off");
         const galleryDetail = containerGalleryDetail.querySelector("div");
         galleryDetail.innerHTML = `
         <img src="${galleryPhoto.picture}" />
@@ -323,11 +323,11 @@ const createGalleryPhotos = () => {
         });
         buttonBack.addEventListener("click", (event) => {
           event.stopPropagation();
-          containerGalleryDetail.classList.add("noshow-detail");
-          containerUserImg.classList.remove("noshow-detail");
-          containerUserName.classList.remove("noshow-detail");
-          containerUserProfile.classList.remove("noshow-detail");
-          containerGallery.classList.remove("noshow-detail");
+          containerGalleryDetail.classList.add("off");
+          containerUserImg.classList.remove("off");
+          containerUserName.classList.remove("off");
+          containerUserProfile.classList.remove("off");
+          containerGallery.classList.remove("off");
           body.classList.remove("remove-scrolling");
         });
 
