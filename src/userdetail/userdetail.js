@@ -2,11 +2,14 @@ import "../assets/sass/styles.scss";
 import "./userdetail.scss";
 import { usersArray } from "../assets/javascripts/users.js";
 
+const body = document.querySelector("body");
 const containerUserImg = document.querySelector("#container-user-img");
 const containerUserName = document.querySelector("#container-user-name");
 const containerUserProfile = document.querySelector("#container-user-profile");
 const containerGallery = document.querySelector("#container-gallery");
-const containerButton = document.querySelector("#container-button");
+const containerGalleryDetail = document.querySelector(
+  "#container-gallery-detail"
+);
 
 const params = new URL(location.href);
 let userName = params.search;
@@ -17,6 +20,14 @@ containerGallery.innerHTML = `
 <fieldset>
   <legend></legend>
   <ul></ul>
+</fieldset>
+`;
+
+containerGalleryDetail.classList.add("noshow-detail");
+containerGalleryDetail.innerHTML = `
+<fieldset class="fieldset-detail" >
+  <legend></legend>
+  <div class="gallery-detail"></div>
 </fieldset>
 `;
 
@@ -138,14 +149,396 @@ switch (userName) {
   }
 }
 
+const legend = containerGallery.querySelector("legend");
+const legendDetail = containerGalleryDetail.querySelector("legend");
+switch (userName) {
+  case "Gustave - L'Aventurier": {
+    legend.innerHTML = `Galerie de ${usersArray[0].photographer.slice(0, 7)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[0].photographer.slice(
+      0,
+      7
+    )}`;
+    break;
+  }
+  case "Julie - L'Aventurière": {
+    legend.innerHTML = `Galerie de ${usersArray[1].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[1].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Henry - L'Aventurier": {
+    legend.innerHTML = `Galerie d'${usersArray[2].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie d'${usersArray[2].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Zoé - L'Aventurière": {
+    legend.innerHTML = `Galerie de ${usersArray[3].photographer.slice(0, 3)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[3].photographer.slice(
+      0,
+      3
+    )}`;
+    break;
+  }
+
+  case "Flora - L'Exploratrice": {
+    legend.innerHTML = `Galerie de ${usersArray[4].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[4].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Denver - L'Explorateur": {
+    legend.innerHTML = `Galerie de ${usersArray[5].photographer.slice(0, 6)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[5].photographer.slice(
+      0,
+      6
+    )}`;
+    break;
+  }
+  case "Inaya - L'Exploratrice": {
+    legend.innerHTML = `Galerie d'${usersArray[6].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie d'${usersArray[6].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Seth - L'Explorateur": {
+    legend.innerHTML = `Galerie de ${usersArray[7].photographer.slice(0, 4)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[7].photographer.slice(
+      0,
+      4
+    )}`;
+    break;
+  }
+
+  case "Lance - Le Visiteur": {
+    legend.innerHTML = `Galerie de ${usersArray[8].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[8].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Nadia - La Visiteuse": {
+    legend.innerHTML = `Galerie de ${usersArray[9].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[9].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Xavier - Le Visiteur": {
+    legend.innerHTML = `Galerie de ${usersArray[10].photographer.slice(0, 6)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[10].photographer.slice(
+      0,
+      6
+    )}`;
+    break;
+  }
+  case "Ornella - La Visiteuse": {
+    legend.innerHTML = `Galerie d'${usersArray[11].photographer.slice(0, 7)}`;
+    legendDetail.innerHTML = `Galerie d'${usersArray[11].photographer.slice(
+      0,
+      7
+    )}`;
+    break;
+  }
+
+  case "Cerise - La Voyageuse": {
+    legend.innerHTML = `Galerie de ${usersArray[12].photographer.slice(0, 6)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[12].photographer.slice(
+      0,
+      6
+    )}`;
+    break;
+  }
+  case "Philibert - Le Voyageur": {
+    legend.innerHTML = `Galerie de ${usersArray[13].photographer.slice(0, 9)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[13].photographer.slice(
+      0,
+      9
+    )}`;
+    break;
+  }
+  case "Roxane - La Voyageuse": {
+    legend.innerHTML = `Galerie de ${usersArray[14].photographer.slice(0, 6)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[14].photographer.slice(
+      0,
+      6
+    )}`;
+    break;
+  }
+  case "Yuu - Le Voyageur": {
+    legend.innerHTML = `Galerie de ${usersArray[15].photographer.slice(0, 3)}`;
+    legendDetail.innerHTML = `Galerie de ${usersArray[15].photographer.slice(
+      0,
+      3
+    )}`;
+    break;
+  }
+}
+
 const createGalleryPhotos = () => {
   const galleryPhotosElement = galleryPhotos
-    .filter((photo) => photo.photographer === `${userName}`)
+    .filter((galleryPhoto) => galleryPhoto.photographer === `${userName}`)
     .map((galleryPhoto) => {
       const galleryPhotoElement = document.createElement("li");
       galleryPhotoElement.innerHTML = "<img />";
-
       const formPhotoImg = galleryPhotoElement.querySelector("img");
+      formPhotoImg.setAttribute("data-id", `${galleryPhoto._id}`);
+      galleryPhotoElement.addEventListener("click", (event) => {
+        const target = event.target;
+        const formPhotoId = target.dataset.id;
+        containerGalleryDetail.classList.remove("noshow-detail");
+        containerUserImg.classList.add("noshow-detail");
+        containerUserName.classList.add("noshow-detail");
+        containerUserProfile.classList.add("noshow-detail");
+        containerGallery.classList.add("noshow-detail");
+        const galleryDetail = containerGalleryDetail.querySelector("div");
+        galleryDetail.innerHTML = `
+        <img src="${galleryPhoto.picture}" />
+        <p> ${galleryPhoto.picture.italics()} </p>
+        <div class="container-button">
+          <button class="button button-detail">Détail</button>
+          <button class="button button-back">Retour</button>
+        </div>
+        `;
+        body.classList.add("remove-scrolling");
+        const buttonDetail = galleryDetail.querySelector(".button-detail");
+        const buttonBack = galleryDetail.querySelector(".button-back");
+        buttonDetail.addEventListener("click", (event) => {
+          event.stopPropagation();
+          if (formPhotoId) {
+            location.assign(`./formdetail.html?id=${formPhotoId}`);
+          } else {
+            location.assign(`./userdetail.html?name=${userName}`);
+          }
+        });
+        buttonBack.addEventListener("click", (event) => {
+          event.stopPropagation();
+          containerGalleryDetail.classList.add("noshow-detail");
+          containerUserImg.classList.remove("noshow-detail");
+          containerUserName.classList.remove("noshow-detail");
+          containerUserProfile.classList.remove("noshow-detail");
+          containerGallery.classList.remove("noshow-detail");
+          body.classList.remove("remove-scrolling");
+        });
+
+        const formPhotoImgDetail = galleryDetail.querySelector("img");
+        switch (galleryPhoto.picture) {
+          case "Un Désert en Cisjordanie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+            break;
+          }
+          case "Un Désert en Jordanie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+            break;
+          }
+          case "Un Désert au Maroc": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+            break;
+          }
+          case "Un Désert en Namibie (Océan Atlantique)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+            break;
+          }
+          case "Un Désert en Oman": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-om.jpg";
+            break;
+          }
+          case "Un Désert au Pérou": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+            break;
+          }
+          case "Un Désert en Arabie Saoudite": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+            break;
+          }
+          case "Un Désert en Namibie (Sud-Ouest)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+            break;
+          }
+          case "Le Désert du Sahara (Soir)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+            break;
+          }
+          case "Sable Blanc du Nouveau-Mexique (USA)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+            break;
+          }
+
+          case "Une Forêt en Australie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-au.jpg";
+            break;
+          }
+          case "Une Forêt au Canada": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-ca.jpg";
+            break;
+          }
+          case "Une Forêt en Finlande": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-fi.jpg";
+            break;
+          }
+          case "Une Forêt en Croatie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-hr.jpg";
+            break;
+          }
+          case "Une Forêt en Inde": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-in.jpg";
+            break;
+          }
+          case "Une Forêt en Italie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-it.jpg";
+            break;
+          }
+          case "Une Forêt au Japon": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-jp.jpg";
+            break;
+          }
+          case "La Forêt des Loups": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-loups.jpg";
+            break;
+          }
+          case "Une Forêt au Nouvelle-Zélande": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-nz.jpg";
+            break;
+          }
+          case "Une Forêt en Washington (USA)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+            break;
+          }
+
+          case "Une Plage en Australie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-au.jpg";
+            break;
+          }
+          case "Une Plage au Brésil": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-br.jpg";
+            break;
+          }
+          case "Une Plage en Grande-Bretagne": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-gb.jpg";
+            break;
+          }
+          case "Une Plage en Italie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-it.jpg";
+            break;
+          }
+          case "Une Plage en Madagascar": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-mg.jpg";
+            break;
+          }
+          case "Une Plage au Mexique": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-mx.jpg";
+            break;
+          }
+          case "Une Plage en Nouvelle-Calédonie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-nc.jpg";
+            break;
+          }
+          case "Une Plage en Polynésie Française": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-pf.jpg";
+            break;
+          }
+          case "Une Plage aux Sychelles": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-sc.jpg";
+            break;
+          }
+          case "Une Plage en Thaïlande": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-plages/plage-th.jpg";
+            break;
+          }
+
+          case "Une Ville au Chili": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-cl.jpg";
+            break;
+          }
+          case "Une Ville en Chine": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-cn.jpg";
+            break;
+          }
+          case "Une Ville en Colombie": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-co.jpg";
+            break;
+          }
+          case "Une Ville en France": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-fr.jpg";
+            break;
+          }
+          case "Une Ville en Grande-Bretagne": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-gb.jpg";
+            break;
+          }
+          case "Une Ville au Japon (Jour)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+            break;
+          }
+          case "Une Ville en Koweït": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-kw.jpg";
+            break;
+          }
+          case "Une Ville en Norvège": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-no.jpg";
+            break;
+          }
+          case "Une Ville Rural d'Allemagne": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+            break;
+          }
+          case "Une Ville d'Italie (Soir)": {
+            formPhotoImgDetail.src =
+              "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+            break;
+          }
+        }
+      });
+
       switch (galleryPhoto.picture) {
         case "Un Désert en Cisjordanie": {
           formPhotoImg.src =
@@ -376,83 +769,3 @@ const fetchGallery = async () => {
   }
 };
 fetchGallery();
-
-const legend = containerGallery.querySelector("legend");
-switch (userName) {
-  case "Gustave - L'Aventurier": {
-    legend.innerHTML = `Galerie de ${usersArray[0].photographer.slice(0, 7)}`;
-    break;
-  }
-  case "Julie - L'Aventurière": {
-    legend.innerHTML = `Galerie de ${usersArray[1].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Henry - L'Aventurier": {
-    legend.innerHTML = `Galerie d'${usersArray[2].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Zoé - L'Aventurière": {
-    legend.innerHTML = `Galerie de ${usersArray[3].photographer.slice(0, 3)}`;
-    break;
-  }
-
-  case "Flora - L'Exploratrice": {
-    legend.innerHTML = `Galerie de ${usersArray[4].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Denver - L'Explorateur": {
-    legend.innerHTML = `Galerie de ${usersArray[5].photographer.slice(0, 6)}`;
-    break;
-  }
-  case "Inaya - L'Exploratrice": {
-    legend.innerHTML = `Galerie d'${usersArray[6].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Seth - L'Explorateur": {
-    legend.innerHTML = `Galerie de ${usersArray[7].photographer.slice(0, 4)}`;
-    break;
-  }
-
-  case "Lance - Le Visiteur": {
-    legend.innerHTML = `Galerie de ${usersArray[8].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Nadia - La Visiteuse": {
-    legend.innerHTML = `Galerie de ${usersArray[9].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Xavier - Le Visiteur": {
-    legend.innerHTML = `Galerie de ${usersArray[10].photographer.slice(0, 6)}`;
-    break;
-  }
-  case "Ornella - La Visiteuse": {
-    legend.innerHTML = `Galerie d'${usersArray[11].photographer.slice(0, 7)}`;
-    break;
-  }
-
-  case "Cerise - La Voyageuse": {
-    legend.innerHTML = `Galerie de ${usersArray[12].photographer.slice(0, 6)}`;
-    break;
-  }
-  case "Philibert - Le Voyageur": {
-    legend.innerHTML = `Galerie de ${usersArray[13].photographer.slice(0, 9)}`;
-    break;
-  }
-  case "Roxane - La Voyageuse": {
-    legend.innerHTML = `Galerie de ${usersArray[14].photographer.slice(0, 6)}`;
-    break;
-  }
-  case "Yuu - Le Voyageur": {
-    legend.innerHTML = `Galerie de ${usersArray[15].photographer.slice(0, 3)}`;
-    break;
-  }
-}
-
-containerButton.innerHTML = `
-          <button class="button button-back">Retour</button>`;
-const buttonBack = containerButton.querySelector("button");
-
-buttonBack.addEventListener("click", (event) => {
-  event.stopPropagation();
-  history.back();
-});

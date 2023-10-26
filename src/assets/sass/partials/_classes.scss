@@ -42,9 +42,14 @@
     border: 0.2rem solid var(--primary);
     color: var(--light);
   }
+  &-detail {
+    background: var(--success);
+    border: 0.2rem solid var(--success);
+    color: var(--light);
+  }
   &-back {
-    background: var(--primary);
-    border: 0.2rem solid var(--primary);
+    background: var(--danger);
+    border: 0.2rem solid var(--danger);
     color: var(--light);
   }
 }
