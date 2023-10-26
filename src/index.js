@@ -11,15 +11,26 @@ let categoriesAll;
 
 categoriesMenu.innerHTML = `
 <li id="guide-menu"></li>
+<li id="guide-menu-total"></li>
 <li id="quete-menu"></li>
+<li id="quete-menu-total"></li>
 <li id="collection-menu"></li>
+<li id="collection-menu-total"></li>
 <li id="partage-menu"></li>
+<li id="partage-menu-total"></li>
 `;
 
 const guideMenu = categoriesMenu.querySelector("#guide-menu");
 const queteMenu = categoriesMenu.querySelector("#quete-menu");
 const collectionMenu = categoriesMenu.querySelector("#collection-menu");
 const partageMenu = categoriesMenu.querySelector("#partage-menu");
+
+const guideMenuTotal = categoriesMenu.querySelector("#guide-menu-total");
+const queteMenuTotal = categoriesMenu.querySelector("#quete-menu-total");
+const collectionMenuTotal = categoriesMenu.querySelector(
+  "#collection-menu-total"
+);
+const partageMenuTotal = categoriesMenu.querySelector("#partage-menu-total");
 
 ////////////////////////////// home start //////////////////////////////
 const displayHomePhotos = async () => {
@@ -333,31 +344,47 @@ const createMenuCategories = () => {
   }, {});
 
   if (!categoriesForm.Guide) {
+    guideMenuTotal.classList.add("off");
+    guideMenu.classList.remove("off");
     guideMenu.innerHTML = `Guide (${categoriesHome.Guide})`;
   } else {
+    guideMenu.classList.add("off");
+    guideMenuTotal.classList.remove("off");
     categoriesAll = categoriesHome.Guide + categoriesForm.Guide;
-    guideMenu.innerHTML = `Guide (${categoriesAll})`;
+    guideMenuTotal.innerHTML = `Guide (${categoriesAll})`;
   }
 
   if (!categoriesForm.Quête) {
+    queteMenuTotal.classList.add("off");
+    queteMenu.classList.remove("off");
     queteMenu.innerHTML = `Quête (${categoriesHome.Quête})`;
   } else {
+    queteMenu.classList.add("off");
+    queteMenuTotal.classList.remove("off");
     categoriesAll = categoriesHome.Quête + categoriesForm.Quête;
-    queteMenu.innerText = `Quête (${categoriesAll})`;
+    queteMenuTotal.innerText = `Quête (${categoriesAll})`;
   }
 
   if (!categoriesForm.Collection) {
+    collectionMenuTotal.classList.add("off");
+    collectionMenu.classList.remove("off");
     collectionMenu.innerText = `Collection (${categoriesHome.Collection})`;
   } else {
+    collectionMenu.classList.add("off");
+    collectionMenuTotal.classList.remove("off");
     categoriesAll = categoriesHome.Collection + categoriesForm.Collection;
-    collectionMenu.innerText = `Collection (${categoriesAll})`;
+    collectionMenuTotal.innerText = `Collection (${categoriesAll})`;
   }
 
   if (!categoriesForm.Partage) {
+    partageMenuTotal.classList.add("off");
+    partageMenu.classList.remove("off");
     partageMenu.innerText = `Partage (${categoriesHome.Partage})`;
   } else {
+    partageMenu.classList.add("off");
+    partageMenuTotal.classList.remove("off");
     categoriesAll = categoriesHome.Partage + categoriesForm.Partage;
-    partageMenu.innerText = `Partage (${categoriesAll})`;
+    partageMenuTotal.innerText = `Partage (${categoriesAll})`;
   }
 
   guideMenu.addEventListener("click", (event) => {
