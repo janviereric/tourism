@@ -3,13 +3,16 @@ import "./admindetail.scss";
 import { adminsArray } from "../assets/javascripts/admins.js";
 import { homePhotosArray } from "../assets/javascripts/home-photos.js";
 
+const body = document.querySelector("body");
 const containerAdminImg = document.querySelector("#container-admin-img");
 const containerAdminName = document.querySelector("#container-admin-name");
 const containerAdminProfile = document.querySelector(
   "#container-admin-profile"
 );
 const containerGallery = document.querySelector("#container-gallery");
-const containerButton = document.querySelector("#container-button");
+const containerGalleryDetail = document.querySelector(
+  "#container-gallery-detail"
+);
 
 const params = new URL(location.href);
 let adminName = params.search;
@@ -18,6 +21,14 @@ containerGallery.innerHTML = `
 <fieldset>
   <legend></legend>
   <ul></ul>
+</fieldset>
+`;
+
+containerGalleryDetail.classList.add("noshow-detail");
+containerGalleryDetail.innerHTML = `
+<fieldset class="fieldset-detail" >
+  <legend></legend>
+  <div class="gallery-detail"></div>
 </fieldset>
 `;
 
@@ -52,6 +63,43 @@ switch (adminName) {
   }
 }
 
+const legend = containerGallery.querySelector("legend");
+const legendDetail = containerGalleryDetail.querySelector("legend");
+switch (adminName) {
+  case "Alice - L'Administratrice": {
+    legend.innerHTML = `Galerie d'${adminsArray[0].photographer.slice(0, 5)}`;
+    legendDetail.innerHTML = `Galerie d'${adminsArray[0].photographer.slice(
+      0,
+      5
+    )}`;
+    break;
+  }
+  case "Ernest - L'Administrateur": {
+    legend.innerHTML = `Galerie d'${adminsArray[1].photographer.slice(0, 6)}`;
+    legendDetail.innerHTML = `Galerie d'${adminsArray[1].photographer.slice(
+      0,
+      6
+    )}`;
+    break;
+  }
+  case "Mia - L'Administratrice": {
+    legend.innerHTML = `Galerie de ${adminsArray[2].photographer.slice(0, 3)}`;
+    legendDetail.innerHTML = `Galerie de ${adminsArray[2].photographer.slice(
+      0,
+      3
+    )}`;
+    break;
+  }
+  case "Ben - L'Administrateur": {
+    legend.innerHTML = `Galerie de ${adminsArray[3].photographer.slice(0, 3)}`;
+    legendDetail.innerHTML = `Galerie de ${adminsArray[3].photographer.slice(
+      0,
+      3
+    )}`;
+    break;
+  }
+}
+
 const displayGalleryPhotos = async () => {
   try {
     const galleryPhotosElement = homePhotosArray
@@ -76,36 +124,49 @@ const createGalleryPhotosElement = (galleryPhoto) => {
   galleryPhotoElement.innerHTML = `
   <img src="${galleryPhoto.photoSrc}" alt="${galleryPhoto.picture}" />
   `;
+  const galleryPhotoImg = galleryPhotoElement.querySelector("img");
+  galleryPhotoImg.setAttribute("data-id", `${galleryPhoto._id}`);
+  galleryPhotoElement.addEventListener("click", (event) => {
+    const target = event.target;
+    const homePhotoId = target.dataset.id;
+    containerGalleryDetail.classList.remove("noshow-detail");
+    containerAdminImg.classList.add("noshow-detail");
+    containerAdminName.classList.add("noshow-detail");
+    containerAdminProfile.classList.add("noshow-detail");
+    containerGallery.classList.add("noshow-detail");
+    const galleryDetail = containerGalleryDetail.querySelector("div");
+    galleryDetail.innerHTML = `
+        <img src="${galleryPhoto.picture}" />
+        <p> ${galleryPhoto.picture.italics()} </p>
+        <div class="container-button">
+          <button class="button button-detail">Détail</button>
+          <button class="button button-back">Retour</button>
+        </div>
+        `;
+    body.classList.add("remove-scrolling");
+    const buttonDetail = galleryDetail.querySelector(".button-detail");
+    const buttonBack = galleryDetail.querySelector(".button-back");
+    buttonDetail.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (homePhotoId) {
+        location.assign(`./homedetail.html?id=${homePhotoId}`);
+      } else {
+        location.assign(`./admindetail.html?name=${adminName}`);
+      }
+    });
+    buttonBack.addEventListener("click", (event) => {
+      event.stopPropagation();
+      containerGalleryDetail.classList.add("noshow-detail");
+      containerAdminImg.classList.remove("noshow-detail");
+      containerAdminName.classList.remove("noshow-detail");
+      containerAdminProfile.classList.remove("noshow-detail");
+      containerGallery.classList.remove("noshow-detail");
+      body.classList.remove("remove-scrolling");
+    });
+    const galleryPhotoImgDetail = galleryDetail.querySelector("img");
+    galleryPhotoImgDetail.setAttribute("src", `${galleryPhoto.photoSrc}`);
+  });
   return galleryPhotoElement;
 };
 
 displayGalleryPhotos();
-
-const legend = containerGallery.querySelector("legend");
-switch (adminName) {
-  case "Alice - L'Administratrice": {
-    legend.innerHTML = `Galerie d'${adminsArray[0].photographer.slice(0, 5)}`;
-    break;
-  }
-  case "Ernest - L'Administrateur": {
-    legend.innerHTML = `Galerie d'${adminsArray[1].photographer.slice(0, 6)}`;
-    break;
-  }
-  case "Mia - L'Administratrice": {
-    legend.innerHTML = `Galerie de ${adminsArray[2].photographer.slice(0, 3)}`;
-    break;
-  }
-  case "Ben - L'Administrateur": {
-    legend.innerHTML = `Galerie de ${adminsArray[3].photographer.slice(0, 3)}`;
-    break;
-  }
-}
-
-containerButton.innerHTML = `
-          <button class="button button-back">Retour</button>`;
-const buttonBack = containerButton.querySelector("button");
-
-buttonBack.addEventListener("click", (event) => {
-  event.stopPropagation();
-  history.back();
-});
