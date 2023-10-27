@@ -395,13 +395,46 @@ const createMenuCategories = () => {
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       createFormPhotosElement();
     } else {
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       filter = "Guide";
       guideMenu.classList.add("target-filter");
+      createFormPhotosElement();
+    }
+  });
+
+  guideMenuTotal.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (filter === "Guide") {
+      filter = null;
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      createFormPhotosElement();
+    } else {
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      filter = "Guide";
+      guideMenuTotal.classList.add("target-filter");
       createFormPhotosElement();
     }
   });
@@ -414,13 +447,46 @@ const createMenuCategories = () => {
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       createFormPhotosElement();
     } else {
       guideMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       filter = "Quête";
       queteMenu.classList.add("target-filter");
+      createFormPhotosElement();
+    }
+  });
+
+  queteMenuTotal.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (filter === "Quête") {
+      filter = null;
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      createFormPhotosElement();
+    } else {
+      guideMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      filter = "Quête";
+      queteMenuTotal.classList.add("target-filter");
       createFormPhotosElement();
     }
   });
@@ -433,13 +499,46 @@ const createMenuCategories = () => {
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       createFormPhotosElement();
     } else {
       guideMenu.classList.remove("target-filter");
       queteMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       filter = "Collection";
       collectionMenu.classList.add("target-filter");
+      createFormPhotosElement();
+    }
+  });
+
+  collectionMenuTotal.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (filter === "Collection") {
+      filter = null;
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      createFormPhotosElement();
+    } else {
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      filter = "Collection";
+      collectionMenuTotal.classList.add("target-filter");
       createFormPhotosElement();
     }
   });
@@ -452,13 +551,46 @@ const createMenuCategories = () => {
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
       partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
       createFormPhotosElement();
     } else {
       guideMenu.classList.remove("target-filter");
       queteMenu.classList.remove("target-filter");
       collectionMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
       filter = "Partage";
       partageMenu.classList.add("target-filter");
+      createFormPhotosElement();
+    }
+  });
+
+  partageMenuTotal.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (filter === "Partage") {
+      filter = null;
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      partageMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      partageMenuTotal.classList.remove("target-filter");
+      createFormPhotosElement();
+    } else {
+      guideMenu.classList.remove("target-filter");
+      queteMenu.classList.remove("target-filter");
+      collectionMenu.classList.remove("target-filter");
+      guideMenuTotal.classList.remove("target-filter");
+      queteMenuTotal.classList.remove("target-filter");
+      collectionMenuTotal.classList.remove("target-filter");
+      filter = "Partage";
+      partageMenuTotal.classList.add("target-filter");
       createFormPhotosElement();
     }
   });
