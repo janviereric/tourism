@@ -47,6 +47,132 @@
       <main>
         <form>
           <h2 class="title-underline">Ajouter une Photo</h2>
+
+          <div class="form-group form-photographer">
+            <div id="container-photographer-label-img">
+              <div id="container-photographer-label">
+                <label for="photographer"
+                  ><span id="text-photographer-color"
+                    >Selectionner un Photographe : </span
+                  ><span id="text-photographer-star"></span
+                ></label>
+                <select name="photographer" id="photographer">
+                  <option value="">Selectionner un Photographe</option>
+                  <optgroup label="Aventure">
+                    <option value="Gustave - L'Aventurier">
+                      Gustave - L'Aventurier
+                    </option>
+                    <option value="Julie - L'Aventurière">
+                      Julie - L'Aventurière
+                    </option>
+                    <option value="Henry - L'Aventurier">
+                      Henry - L'Aventurier
+                    </option>
+                    <option value="Zoé - L'Aventurière">
+                      Zoé - L'Aventurière
+                    </option>
+                  </optgroup>
+                  <optgroup label="Exploration">
+                    <option value="Flora - L'Exploratrice">
+                      Flora - L'Exploratrice
+                    </option>
+                    <option value="Denver - L'Explorateur">
+                      Denver - L'Explorateur
+                    </option>
+                    <option value="Inaya - L'Exploratrice">
+                      Inaya - L'Exploratrice
+                    </option>
+                    <option value="Seth - L'Explorateur">
+                      Seth - L'Explorateur
+                    </option>
+                  </optgroup>
+                  <optgroup label="Visite">
+                    <option value="Lance - Le Visiteur">
+                      Lance - Le Visiteur
+                    </option>
+                    <option value="Nadia - La Visiteuse">
+                      Nadia - La Visiteuse
+                    </option>
+                    <option value="Xavier - Le Visiteur">
+                      Xavier - Le Visiteur
+                    </option>
+                    <option value="Ornella - La Visiteuse">
+                      Ornella - La Visiteuse
+                    </option>
+                  </optgroup>
+
+                  <optgroup label="Voyage">
+                    <option value="Cerise - La Voyageuse">
+                      Cerise - La Voyageuse
+                    </option>
+                    <option value="Philibert - Le Voyageur">
+                      Philibert - Le Voyageur
+                    </option>
+                    <option value="Roxane - La Voyageuse">
+                      Roxane - La Voyageuse
+                    </option>
+                    <option value="Yuu - Le Voyageur">Yuu - Le Voyageur</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div id="container-img-description-photographer">
+                <div id="container-photographer-img" class="off"></div>
+                <div id="container-description-photographer" class="off"></div>
+              </div>
+            </div>
+            <small id="text-info-photographer"></small>
+          </div>
+
+          <div class="form-category">
+            <div>
+              <span id="text-category-color" class="form-title-category"
+                >Choisir la Categorie de la Photo : </span
+              ><span id="text-category-star"></span>
+            </div>
+            <div class="container-name-category">
+              <div>
+                <input type="radio" id="Guide" name="category" value="Guide" />
+                <label for="Guide"
+                  >Guide<span class="off text-definition-guide">*</span></label
+                >
+              </div>
+              <div>
+                <input type="radio" id="Quête" name="category" value="Quête" />
+                <label for="Quête"
+                  >Quête<span class="off text-definition-quete">*</span></label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Collection"
+                  name="category"
+                  value="Collection"
+                />
+                <label for="Collection"
+                  >Collection<span class="off text-definition-collection"
+                    >*</span
+                  ></label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Partage"
+                  name="category"
+                  value="Partage"
+                />
+                <label for="Partage"
+                  >Partage<span class="off text-definition-partage"
+                    >*</span
+                  ></label
+                >
+              </div>
+            </div>
+            <div id="container-description-category"></div>
+            <small id="text-info-category"></small>
+          </div>
+
           <div class="form-group form-picture">
             <div id="container-photo-label-img">
               <div id="container-photo-label">
@@ -55,7 +181,7 @@
                   ><span id="text-picture-star"></span
                 ></label>
                 <select name="picture" id="picture">
-                  <option value="">Selectionner une photo</option>
+                  <option value="">Selectionner une Photo</option>
                   <optgroup label="Les Déserts">
                     <option value="Un Désert en Cisjordanie">
                       Un Désert en Cisjordanie
@@ -186,117 +312,11 @@
             </div>
             <small id="text-info-picture"></small>
           </div>
-          <div class="form-category">
-            <label
-              ><span id="text-category-color" class="form-title-category"
-                >Choisir une Categorie : </span
-              ><span id="text-category-star"></span
-            ></label>
-            <div class="container-name-category">
-              <div>
-                <input type="radio" id="Guide" name="category" value="Guide" />
-                <label for="Guide">Guide</label>
-              </div>
-              <div>
-                <input type="radio" id="Quête" name="category" value="Quête" />
-                <label for="Quête">Quête</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="Collection"
-                  name="category"
-                  value="Collection"
-                />
-                <label for="Collection">Collection</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="Partage"
-                  name="category"
-                  value="Partage"
-                />
-                <label for="Partage">Partage</label>
-              </div>
-            </div>
-            <small id="text-info-category"></small>
-          </div>
 
-          <div class="form-group form-photographer">
-            <div id="container-photographer-label-img">
-              <div id="container-photographer-laber">
-                <label for="photographer"
-                  ><span id="text-photographer-color"
-                    >Choisir un Photographe : </span
-                  ><span id="text-photographer-star"></span
-                ></label>
-                <select name="photographer" id="photographer">
-                  <option value="">Selectionner un Photographe :</option>
-                  <optgroup label="Aventure">
-                    <option value="Gustave - L'Aventurier">
-                      Gustave - L'Aventurier
-                    </option>
-                    <option value="Julie - L'Aventurière">
-                      Julie - L'Aventurière
-                    </option>
-                    <option value="Henry - L'Aventurier">
-                      Henry - L'Aventurier
-                    </option>
-                    <option value="Zoé - L'Aventurière">
-                      Zoé - L'Aventurière
-                    </option>
-                  </optgroup>
-                  <optgroup label="Exploration">
-                    <option value="Flora - L'Exploratrice">
-                      Flora - L'Exploratrice
-                    </option>
-                    <option value="Denver - L'Explorateur">
-                      Denver - L'Explorateur
-                    </option>
-                    <option value="Inaya - L'Exploratrice">
-                      Inaya - L'Exploratrice
-                    </option>
-                    <option value="Seth - L'Explorateur">
-                      Seth - L'Explorateur
-                    </option>
-                  </optgroup>
-                  <optgroup label="Visite">
-                    <option value="Lance - Le Visiteur">
-                      Lance - Le Visiteur
-                    </option>
-                    <option value="Nadia - La Visiteuse">
-                      Nadia - La Visiteuse
-                    </option>
-                    <option value="Xavier - Le Visiteur">
-                      Xavier - Le Visiteur
-                    </option>
-                    <option value="Ornella - La Visiteuse">
-                      Ornella - La Visiteuse
-                    </option>
-                  </optgroup>
-
-                  <optgroup label="Voyage">
-                    <option value="Cerise - La Voyageuse">
-                      Cerise - La Voyageuse
-                    </option>
-                    <option value="Philibert - Le Voyageur">
-                      Philibert - Le Voyageur
-                    </option>
-                    <option value="Roxane - La Voyageuse">
-                      Roxane - La Voyageuse
-                    </option>
-                    <option value="Yuu - Le Voyageur">Yuu - Le Voyageur</option>
-                  </optgroup>
-                </select>
-              </div>
-              <div id="container-photographer-img" class="off"></div>
-            </div>
-            <small id="text-info-photographer"></small>
-          </div>
           <div class="form-group form-content">
             <label for="content"
-              ><span id="text-content-color">Choisir une Description : </span
+              ><span id="text-content-color"
+                >Choisir une Description pour la Photo : </span
               ><span id="text-content-star"></span
             ></label>
             <select name="content" id="content">
@@ -333,10 +353,11 @@
                 Description Excellent &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;
               </option>
             </select>
-            <div id="container-description-note"></div>
+            <div id="container-description-content"></div>
             <small id="text-info-content"></small>
           </div>
           <small id="text-info"></small>
+
           <div class="form-button-container">
             <button type="button" class="button button-cancel">Annuler</button>
             <button type="submit" class="button button-add">Ajouter</button>

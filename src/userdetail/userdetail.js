@@ -1,6 +1,6 @@
 import "../assets/sass/styles.scss";
 import "./userdetail.scss";
-import { usersArray } from "../assets/javascripts/users.js";
+import { usersArray } from "../assets/javascripts/link.js";
 
 const body = document.querySelector("body");
 const containerUserImg = document.querySelector("#container-user-img");
@@ -27,37 +27,60 @@ containerGalleryDetail.classList.add("off");
 containerGalleryDetail.innerHTML = `
 <fieldset class="fieldset-detail" >
   <legend></legend>
+  <p class="gallery-detail-name"></p>
   <div class="gallery-detail"></div>
+  <div class="container-button">
+    <button class="button button-detail">Détail</button>
+    <button class="button button-back">Retour</button>
+  </div>
 </fieldset>
 `;
+const galleryDetailName = containerGalleryDetail.querySelector(
+  ".gallery-detail-name"
+);
+const galleryDetail = containerGalleryDetail.querySelector(".gallery-detail");
+const buttonDetail = containerGalleryDetail.querySelector(".button-detail");
+const buttonBack = containerGalleryDetail.querySelector(".button-back");
 
 switch (userName) {
   case "?name=Gustave%20-%20L%27Aventurier": {
     userName = "Gustave - L'Aventurier";
     containerUserName.innerHTML = `<p>${usersArray[0].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[0].imgDetailSrc}" alt="${usersArray[0].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[0].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[0].photographer.slice(
+      0,
+      7
+    )}</span> ${usersArray[0].profile}</p>`;
     break;
   }
   case "?name=Julie%20-%20L%27Aventuri%C3%A8re": {
     userName = "Julie - L'Aventurière";
     containerUserName.innerHTML = `<p>${usersArray[1].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[1].imgDetailSrc}" alt="${usersArray[1].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[1].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[1].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[1].profile}</p>`;
     break;
   }
   case "?name=Henry%20-%20L%27Aventurier": {
     userName = "Henry - L'Aventurier";
     containerUserName.innerHTML = `<p>${usersArray[2].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[2].imgDetailSrc}" alt="${usersArray[2].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[2].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[2].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[2].profile}</p>`;
     break;
   }
   case "?name=Zo%C3%A9%20-%20L%27Aventuri%C3%A8re": {
     userName = "Zoé - L'Aventurière";
     containerUserName.innerHTML = `<p>${usersArray[3].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[3].imgDetailSrc}" alt="${usersArray[3].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[3].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[3].photographer.slice(
+      0,
+      3
+    )}</span> ${usersArray[3].profile}</p>`;
     break;
   }
 
@@ -65,28 +88,40 @@ switch (userName) {
     userName = "Flora - L'Exploratrice";
     containerUserName.innerHTML = `<p>${usersArray[4].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[4].imgDetailSrc}" alt="${usersArray[4].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[4].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[4].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[4].profile}</p>`;
     break;
   }
   case "?name=Denver%20-%20L%27Explorateur": {
     userName = "Denver - L'Explorateur";
     containerUserName.innerHTML = `<p>${usersArray[5].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[5].imgDetailSrc}" alt="${usersArray[5].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[5].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[5].photographer.slice(
+      0,
+      6
+    )}</span> ${usersArray[5].profile}</p>`;
     break;
   }
   case "?name=Inaya%20-%20L%27Exploratrice": {
     userName = "Inaya - L'Exploratrice";
     containerUserName.innerHTML = `<p>${usersArray[6].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[6].imgDetailSrc}" alt="${usersArray[6].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[6].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[6].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[6].profile}</p>`;
     break;
   }
   case "?name=Seth%20-%20L%27Explorateur": {
     userName = "Seth - L'Explorateur";
     containerUserName.innerHTML = `<p>${usersArray[7].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[7].imgDetailSrc}" alt="${usersArray[7].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[7].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[7].photographer.slice(
+      0,
+      4
+    )}</span> ${usersArray[7].profile}</p>`;
     break;
   }
 
@@ -94,28 +129,40 @@ switch (userName) {
     userName = "Lance - Le Visiteur";
     containerUserName.innerHTML = `<p>${usersArray[8].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[8].imgDetailSrc}" alt="${usersArray[8].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[8].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[8].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[8].profile}</p>`;
     break;
   }
   case "?name=Nadia%20-%20La%20Visiteuse": {
     userName = "Nadia - La Visiteuse";
     containerUserName.innerHTML = `<p>${usersArray[9].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[9].imgDetailSrc}" alt="${usersArray[9].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[9].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[9].photographer.slice(
+      0,
+      5
+    )}</span> ${usersArray[9].profile}</p>`;
     break;
   }
   case "?name=Xavier%20-%20Le%20Visiteur": {
     userName = "Xavier - Le Visiteur";
     containerUserName.innerHTML = `<p>${usersArray[10].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[10].imgDetailSrc}" alt="${usersArray[10].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[10].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[10].photographer.slice(
+      0,
+      6
+    )}</span> ${usersArray[10].profile}</p>`;
     break;
   }
   case "?name=Ornella%20-%20La%20Visiteuse": {
     userName = "Ornella - La Visiteuse";
     containerUserName.innerHTML = `<p>${usersArray[11].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[11].imgDetailSrc}" alt="${usersArray[11].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[11].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[11].photographer.slice(
+      0,
+      7
+    )}</span> ${usersArray[11].profile}</p>`;
     break;
   }
 
@@ -123,28 +170,40 @@ switch (userName) {
     userName = "Cerise - La Voyageuse";
     containerUserName.innerHTML = `<p>${usersArray[12].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[12].imgDetailSrc}" alt="${usersArray[12].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[12].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[12].photographer.slice(
+      0,
+      6
+    )}</span> ${usersArray[12].profile}</p>`;
     break;
   }
   case "?name=Philibert%20-%20Le%20Voyageur": {
     userName = "Philibert - Le Voyageur";
     containerUserName.innerHTML = `<p>${usersArray[13].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[13].imgDetailSrc}" alt="${usersArray[13].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[13].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[13].photographer.slice(
+      0,
+      9
+    )}</span> ${usersArray[13].profile}</p>`;
     break;
   }
   case "?name=Roxane%20-%20La%20Voyageuse": {
     userName = "Roxane - La Voyageuse";
     containerUserName.innerHTML = `<p>${usersArray[14].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[14].imgDetailSrc}" alt="${usersArray[14].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[14].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[14].photographer.slice(
+      0,
+      6
+    )}</span> ${usersArray[14].profile}</p>`;
     break;
   }
   case "?name=Yuu%20-%20Le%20Voyageur": {
     userName = "Yuu - Le Voyageur";
     containerUserName.innerHTML = `<p>${usersArray[15].photographer}</p>`;
     containerUserImg.innerHTML = `<img src="${usersArray[15].imgDetailSrc}" alt="${usersArray[15].imgDetailSrc}"/>`;
-    containerUserProfile.innerHTML = `<p>${usersArray[15].profile}</p>`;
+    containerUserProfile.innerHTML = `<p><span>${usersArray[15].photographer.slice(
+      0,
+      3
+    )}</span> ${usersArray[15].profile}</p>`;
     break;
   }
 }
@@ -301,18 +360,12 @@ const createGalleryPhotos = () => {
         containerUserName.classList.add("off");
         containerUserProfile.classList.add("off");
         containerGallery.classList.add("off");
-        const galleryDetail = containerGalleryDetail.querySelector("div");
-        galleryDetail.innerHTML = `
-        <img src="${galleryPhoto.picture}" />
-        <p> ${galleryPhoto.picture.italics()} </p>
-        <div class="container-button">
-          <button class="button button-detail">Détail</button>
-          <button class="button button-back">Retour</button>
-        </div>
-        `;
+
+        galleryDetailName.innerHTML = `${galleryPhoto.picture.italics()}`;
+        galleryDetail.innerHTML = `<img src="${galleryPhoto.picture}" />`;
+
         body.classList.add("remove-scrolling");
-        const buttonDetail = galleryDetail.querySelector(".button-detail");
-        const buttonBack = galleryDetail.querySelector(".button-back");
+
         buttonDetail.addEventListener("click", (event) => {
           event.stopPropagation();
           if (formPhotoId) {
@@ -321,6 +374,7 @@ const createGalleryPhotos = () => {
             location.assign(`./userdetail.html?name=${userName}`);
           }
         });
+
         buttonBack.addEventListener("click", (event) => {
           event.stopPropagation();
           containerGalleryDetail.classList.add("off");
@@ -330,7 +384,6 @@ const createGalleryPhotos = () => {
           containerGallery.classList.remove("off");
           body.classList.remove("remove-scrolling");
         });
-
         const formPhotoImgDetail = galleryDetail.querySelector("img");
         switch (galleryPhoto.picture) {
           case "Un Désert en Cisjordanie": {

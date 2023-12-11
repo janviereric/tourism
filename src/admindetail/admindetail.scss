@@ -28,7 +28,13 @@
 
 #container-admin-profile {
   font-family: var(--form);
-  margin-bottom: 3rem;
+  width: 40rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  p span {
+    color: var(--primary);
+    font-weight: bold;
+  }
 }
 
 #container-gallery {
@@ -44,15 +50,17 @@
     }
     ul {
       li {
-        height: 9rem;
         width: 10rem;
-        padding: 0.5rem 0.5rem 0 0.5rem;
+        padding: 0.2rem;
         margin-bottom: 3rem;
         margin-left: 1rem;
         margin-right: 1rem;
         box-shadow: var(--shadow);
-        cursor: pointer;
+        cursor: zoom-in;
         transition: all 0.2s;
+        img {
+          margin-bottom: -0.4rem;
+        }
         &:hover {
           transition: all 0.2s;
           border: 0.1rem solid var(--hint);
@@ -62,7 +70,7 @@
   }
 }
 
-// JS Start//
+// js start //
 .mode-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -86,22 +94,23 @@
     padding-right: 3rem;
     margin-bottom: 5rem;
   }
-}
-
-.gallery-detail {
-  box-shadow: var(--shadow);
-  padding: 1rem;
-  padding-bottom: 4rem;
-  p {
+  .gallery-detail-name {
     text-align: center;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     color: var(--primary);
+  }
+  .gallery-detail {
+    box-shadow: var(--shadow);
+    padding: 0.5rem;
+    img {
+      margin-bottom: -0.4rem;
+    }
   }
   .container-button {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 6rem;
+    padding-top: 7rem;
   }
 }
 
@@ -109,4 +118,4 @@
   height: 100%;
   overflow: hidden;
 }
-// JS End//
+// js end //

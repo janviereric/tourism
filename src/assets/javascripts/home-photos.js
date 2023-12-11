@@ -10,7 +10,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mardi 01 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Émirats Arabes Unis. Le désert semble être vaste. Au loin on peut voir une montagne.",
   },
   {
     _id: 1,
@@ -23,7 +23,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le mercredi 02 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo est une forêt en automne. Les pétales de fleurs au sol mélangé avec la couleur rougeatre des feuillages des arbres donne l'impression de voir une oeuvre d'art.",
   },
   {
     _id: 2,
@@ -36,7 +36,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le jeudi 03 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage en Antigua. L'eau semble être propre et agréable pour se baigner. Le lieu semble être calme.",
   },
   {
     _id: 3,
@@ -49,7 +49,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le vendredi 04 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville du Japon. La ville semble être bien entretenu. Il y a la présence de personnes. On dirait qu'il y a des restaurants aux alentours.",
   },
   {
     _id: 4,
@@ -62,7 +62,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le lundi 07 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre le désert du Sahara. Le désert semble être vaste. Il y a plusieurs cassis ou dos d'âne de sable.",
   },
   {
     _id: 5,
@@ -75,7 +75,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le mardi 08 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo est une vue d'ensemble dans une forêt aux États-Unis. L'eau semble être potable. Les arbres sont de très grande taille.",
   },
   {
     _id: 6,
@@ -88,7 +88,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le mercredi 09 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette plage situé en Aruba semble être bien entretenu. Il y a présence de plusieurs personnes. Il semble y avoir de l'animation. L'eau semble être propre.",
   },
   {
     _id: 7,
@@ -101,7 +101,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le jeudi 10 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Argentine. Il y a beaucoup de batiments. On remarque deux tours au loin. La ville semble être très grande.",
   },
   {
     _id: 8,
@@ -114,7 +114,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le vendredi 11 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert dans l'état Arizona aux États-Unis. Il y a une grosse pierre entouré d'eau. Le désert semble être vaste. ",
   },
   {
     _id: 9,
@@ -127,7 +127,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le lundi 14 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en Allemagne. Il y a plusieurs feuillage. Cette partie de la forêt est sombre. Il y a le rayon du soleil dans la partie gauche de la photo.",
   },
   {
     _id: 10,
@@ -140,7 +140,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le mardi 15 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage aux Bahamas. L'eau semble être jolie.",
   },
   {
     _id: 11,
@@ -153,7 +153,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le mercredi 16 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Californie aux États-Unis. Il y a plusieurs arbres et maisons. L'ensemble des toits des maisons varie d'une couleur à une autre.",
   },
   {
     _id: 12,
@@ -166,7 +166,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le jeudi 17 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Australie. On voit quelque feuillage au sol. Ce désert semble être vaste.",
   },
   {
     _id: 13,
@@ -179,7 +179,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le vendredi 18 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en Estonie. Les arbres de cette forêt sont immenses à un tel point qu'il est difficile de voir leur sommet. Cette forêt semble être  bien entretenu.",
   },
   {
     _id: 14,
@@ -192,7 +192,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le lundi 21 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage en Espagne. Il y a plusieurs rocher. Au loin, on peut apercevoir les lumières de la ville.",
   },
   {
     _id: 15,
@@ -205,7 +205,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le mardi 22 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Espagne. On remarque qu'il y a plusieurs maisons et plusieurs bâtiments. Au loin on remarque un grand édifice.",
   },
   {
     _id: 16,
@@ -218,7 +218,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mercredi 23 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Californie des États-Unis. On dirait que cette photo est une prise en biai.",
   },
   {
     _id: 17,
@@ -231,7 +231,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le jeudi 24 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en été. Cette partie de la forêt semble être idéale pour la promenade. Ce pont semble être pratique pour ceux qui aiment faire de la randonnée.",
   },
   {
     _id: 18,
@@ -244,7 +244,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le vendredi 25 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage situé aux Îles de Fidji. Cette plage semble être jolie. L'eau semble être propre. Il semble qu'il y ait des activités aux alentours.",
   },
   {
     _id: 19,
@@ -257,7 +257,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le lundi 28 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Province de l'Italie. L'eau de la mer semble être très jolie. Il y a un bâteau , il y a également plusieurs bâtiments de diverse couleur. Au loin on remarque la compagne.",
   },
   {
     _id: 20,
@@ -270,7 +270,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mardi 29 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert au Chili. Le sol semble être sec et dur. Le désert semble être vast. Au loin on peut voir des montagnes.",
   },
   {
     _id: 21,
@@ -283,7 +283,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le mercredi 30 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en Grande-Bretagne. Cette forêt semble donner la possibilité de faire du velo ou de marcher. Il y a plusieurs arbres.",
   },
   {
     _id: 22,
@@ -296,7 +296,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le jeudi 31 août 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage en Grèce. L'eau de la mer semble être belle et propre. Cette plage est bien entretenu. Il y a des collines aux environs.",
   },
   {
     _id: 23,
@@ -309,7 +309,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le vendredi 01 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une rue d'une ville en Suède. Il y a quelque pavillons. La rue semble faire plusieurs kilomètres. La rue semble être calme. Il y a la présence de nuages et d'arbres.",
   },
   {
     _id: 24,
@@ -322,7 +322,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le lundi 04 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Espagne. Le désert semble être vaste. Il y a des trous qui ressemble à des empreintes d'animaux.",
   },
   {
     _id: 25,
@@ -335,7 +335,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le mardi 05 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en période hivernale. La forêt semble être vaste. Les arbres sont grands. On arrive distinguer un chemin.",
   },
   {
     _id: 26,
@@ -348,7 +348,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le mercredi 06 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage situé en Israël. Il semble y avoir des restaurants, des activités, des jeux, des bus touristique, autour de la plage.",
   },
   {
     _id: 27,
@@ -361,7 +361,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le jeudi 07 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville au Japon pendant le soir. Il y a plusieurs immeubles et plusieurs bâtiments. On remarque une tour rouge. La ville semble être une grande ville.",
   },
   {
     _id: 28,
@@ -374,7 +374,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le vendredi 08 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Israël. On remarque qu'il y a plusieurs chameaux et plusieurs chemins. On remarque aussi qu'il a des montagnes au loin. Le désert semble être immense. ",
   },
   {
     _id: 29,
@@ -387,7 +387,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le lundi 11 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en Inde. Le sol semble être doux et agréable pour la marche à pieds. Il y a plusieurs arbres et feuillages.",
   },
   {
     _id: 30,
@@ -400,7 +400,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le mardi 12 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage situé aux Maldives. Il y a avec un cocotier. L'eau de la mer est claire et transparente à partir d'une certaine distance puis elle est foncée au loin.",
   },
   {
     _id: 31,
@@ -413,7 +413,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le mercredi 13 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Turquie. Il y a plusieurs immeubles de différentes couleurs. On distinque au loin quelque chose qui ressemble le haut d'un château.",
   },
   {
     _id: 32,
@@ -426,7 +426,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le jeudi 14 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre le désert de Sahara dans la matinéé. Le sable semble être jolie et agréable. Il semblerait qu'on peut marcher les pieds nus.",
   },
   {
     _id: 33,
@@ -439,7 +439,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le vendredi 15 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en printemps. Le chemin est ensoleilé. Cette photo donne l'air qu'on peut faire une promenade ou une randonné familiale.",
   },
   {
     _id: 34,
@@ -452,20 +452,20 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le lundi 18 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage en Russie. L'eau de la mer est bleu foncée. On voit aussi un bateau bleu clair au bord de la mer. Le couleur du sable est clair.",
   },
   {
     _id: 35,
     photoSrc: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
     detailSrc:
       "./assets/images/home-detail/home-villes-detail/ville-detail-urbain-ge.jpg",
-    picture: "Une Ville Urbain en Allemagne",
+    picture: "Une Ville Urbaine en Allemagne",
     category: "Partage",
     photographer: "Ben - L'Administrateur",
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le mardi 19 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une photo dans une ville urbaine en Allemagne. Il y a plusieurs building et quelque édifice. On voit aussi des personnes ainsi qu'une place centrale.",
   },
   {
     _id: 36,
@@ -478,7 +478,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mercredi 20 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un désert en Neveda des États-Unis. Ce désert semble être pierreux et caillouteux. Il y a des montagnes et un peu de végétation.",
   },
   {
     _id: 37,
@@ -491,7 +491,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
     createdAt: "le jeudi 21 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une forêt en Suède. Il y a des arbres et quelque cassis ou dos d'âne.",
   },
   {
     _id: 38,
@@ -504,7 +504,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/mia-administratrice.jpg",
     createdAt: "le vendredi 22 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une plage aux États-Unis. L'eau de la mer semble être jolie. Il semble y avoir fréquemment des vagues. Cette plage semble être bien entretenu. ",
   },
   {
     _id: 39,
@@ -517,7 +517,7 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/ben-administrateur.jpg",
     createdAt: "le lundi 25 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre une ville en Nouvelle-Zélande. Il y a quelque bâtiments du côté droit. Il y a une grande édifice du côté gauche. Il y a de la circulation avec des voitures et un bus.",
   },
   {
     _id: 40,
@@ -530,6 +530,6 @@ export const homePhotosArray = [
     photographerImg: "./assets/images/admins/alice-administratrice.jpg",
     createdAt: "le mardi 26 septembre 2023",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id.",
+      "Cette photo montre un desert du Nouveau-Mexique aux États-Unis. Ce désert ressemble à un chateau de sable. Il y a quelques végétations.",
   },
 ];

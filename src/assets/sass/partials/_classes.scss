@@ -52,6 +52,16 @@
     border: 0.2rem solid var(--danger);
     color: var(--light);
   }
+  &-yes {
+    background: var(--danger);
+    border: 0.2rem solid var(--danger);
+    color: var(--light);
+  }
+  &-no {
+    background: var(--success);
+    border: 0.2rem solid var(--success);
+    color: var(--light);
+  }
 }
 
 .text {
@@ -67,4 +77,39 @@
     color: var(--info);
     font-weight: bold;
   }
+  &-bold {
+    color: var(--dark);
+    font-weight: bold;
+  }
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .modal {
+    background: white;
+    min-width: 30rem;
+    border-radius: 3px;
+    padding: 5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    p {
+      margin: 1rem 0 3rem 0;
+    }
+    .button {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
 }

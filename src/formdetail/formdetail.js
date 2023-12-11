@@ -1,5 +1,6 @@
 import "../assets/sass/styles.scss";
 import "./formdetail.scss";
+import { openModal } from "../assets/javascripts/link.js";
 
 const containerPhotoName = document.querySelector(".container-photo-name");
 const containerPhotoImg = document.querySelector(".container-photo-img");
@@ -7,11 +8,11 @@ const containerUser = document.querySelector(".container-user");
 const containerDate = document.querySelector(".container-date");
 const containerContent = document.querySelector(".container-content");
 const containerButton = document.querySelector(".container-button");
+const params = new URL(location.href);
+const photoId = params.searchParams.get("id");
 
 const displayFormPhotoDetail = async () => {
   try {
-    const params = new URL(location.href);
-    const photoId = params.searchParams.get("id");
     if (photoId) {
       const response = await fetch(`https://restapi.fr/api/photos/${photoId}`);
       if (response.status < 300) {
@@ -365,14 +366,19 @@ const displayFormPhotoDetail = async () => {
         const buttonDelete = containerButton.querySelector(".button-delete");
         buttonDelete.addEventListener("click", async (event) => {
           event.stopPropagation();
-          try {
-            const response = await fetch(
-              `https://restapi.fr/api/photos/${photoId}`,
-              { method: "DELETE" }
-            );
-            location.assign("./index.html");
-          } catch (error) {
-            console.error("error : ", error);
+          const result = await openModal(
+            `Êtes vous sûr de vouloir <span class="text-error">supprimer</span> la <span class="text-bold">Photo</span> ?`
+          );
+          if (result === true) {
+            try {
+              const response = await fetch(
+                `https://restapi.fr/api/photos/${photoId}`,
+                { method: "DELETE" }
+              );
+              location.assign("./index.html");
+            } catch (error) {
+              console.error("error : ", error);
+            }
           }
         });
       } else {

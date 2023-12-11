@@ -13,6 +13,7 @@ module.exports = {
     userdetail: path.join(__dirname, "src/userdetail/userdetail.js"),
     formedit: path.join(__dirname, "src/formedit/formedit.js"),
     header: path.join(__dirname, "src/assets/javascripts/header.js"),
+    link: path.join(__dirname, "src/assets/javascripts/link.js"),
   },
   output: {
     path: path.join(__dirname, "dist"),
@@ -160,37 +161,37 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "./index.html",
       template: path.join(__dirname, "./src/index.html"),
-      chunks: ["main", "header"],
+      chunks: ["main", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./form.html",
       template: path.join(__dirname, "./src/form/form.html"),
-      chunks: ["form", "header"],
+      chunks: ["form", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./homedetail.html",
       template: path.join(__dirname, "./src/homedetail/homedetail.html"),
-      chunks: ["homedetail", "header"],
+      chunks: ["homedetail", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./formdetail.html",
       template: path.join(__dirname, "./src/formdetail/formdetail.html"),
-      chunks: ["formdetail", "header"],
+      chunks: ["formdetail", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./admindetail.html",
       template: path.join(__dirname, "./src/admindetail/admindetail.html"),
-      chunks: ["admindetail", "header"],
+      chunks: ["admindetail", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./userdetail.html",
       template: path.join(__dirname, "./src/userdetail/userdetail.html"),
-      chunks: ["userdetail", "header"],
+      chunks: ["userdetail", "header", "link"],
     }),
     new HtmlWebpackPlugin({
       filename: "./formedit.html",
       template: path.join(__dirname, "./src/formedit/formedit.html"),
-      chunks: ["formedit", "header"],
+      chunks: ["formedit", "header", "link"],
     }),
   ],
   stats: "minimal",

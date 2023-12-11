@@ -1,17 +1,17 @@
 import "../assets/sass/styles.scss";
 import "./homedetail.scss";
-import { homePhotosArray } from "../assets/javascripts/home-photos.js";
+import { homePhotosArray } from "../assets/javascripts/link.js";
 
 const containerPhotoName = document.querySelector(".container-photo-name");
 const containerPhotoImg = document.querySelector(".container-photo-img");
 const containerAdmin = document.querySelector(".container-admin");
 const containerDate = document.querySelector(".container-date");
 const containerContent = document.querySelector(".container-content");
+const params = new URL(location.href);
+const photoId = params.searchParams.get("id");
 
-const diplayHomePhotoDetail = async () => {
+export const diplayHomePhotoDetail = async () => {
   try {
-    const params = new URL(location.href);
-    const photoId = params.searchParams.get("id");
     if (photoId) {
       containerPhotoName.innerHTML = `<h1>${homePhotosArray[photoId].picture}</h1>`;
       containerPhotoImg.innerHTML = `<img src="${homePhotosArray[photoId].detailSrc}" alt="${homePhotosArray[photoId].picture}" />`;

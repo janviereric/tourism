@@ -28,37 +28,60 @@ containerGalleryDetail.classList.add("off");
 containerGalleryDetail.innerHTML = `
 <fieldset class="fieldset-detail" >
   <legend></legend>
+  <p class="gallery-detail-name"></p>
   <div class="gallery-detail"></div>
+  <div class="container-button">
+  <button class="button button-detail">Détail</button>
+  <button class="button button-back">Retour</button>
+</div>
 </fieldset>
 `;
+const galleryDetailName = containerGalleryDetail.querySelector(
+  ".gallery-detail-name"
+);
+const galleryDetail = containerGalleryDetail.querySelector(".gallery-detail");
+const buttonDetail = containerGalleryDetail.querySelector(".button-detail");
+const buttonBack = containerGalleryDetail.querySelector(".button-back");
 
 switch (adminName) {
   case "?name=Alice%20-%20L%27Administratrice": {
     adminName = "Alice - L'Administratrice";
     containerAdminName.innerHTML = `<p>${adminsArray[0].photographer}</p>`;
     containerAdminImg.innerHTML = `<img src="${adminsArray[0].imgDetailSrc}" alt="${adminsArray[0].imgDetailSrc}"/>`;
-    containerAdminProfile.innerHTML = `<p>${adminsArray[0].profile}</p>`;
+    containerAdminProfile.innerHTML = `<p><span> ${adminsArray[0].photographer.slice(
+      0,
+      5
+    )}</span> ${adminsArray[0].profile}</p>`;
     break;
   }
   case "?name=Ernest%20-%20L%27Administrateur": {
     adminName = "Ernest - L'Administrateur";
     containerAdminName.innerHTML = `<p>${adminsArray[1].photographer}</p>`;
     containerAdminImg.innerHTML = `<img src="${adminsArray[1].imgDetailSrc}" alt="${adminsArray[1].imgDetailSrc}"/>`;
-    containerAdminProfile.innerHTML = `<p>${adminsArray[1].profile}</p>`;
+    containerAdminProfile.innerHTML = `<p><span>${adminsArray[1].photographer.slice(
+      0,
+      6
+    )}</span> ${adminsArray[1].profile}</p>`;
     break;
   }
   case "?name=Mia%20-%20L%27Administratrice": {
     adminName = "Mia - L'Administratrice";
     containerAdminName.innerHTML = `<p>${adminsArray[2].photographer}</p>`;
     containerAdminImg.innerHTML = `<img src="${adminsArray[2].imgDetailSrc}" alt="${adminsArray[2].imgDetailSrc}"/>`;
-    containerAdminProfile.innerHTML = `<p>${adminsArray[2].profile}</p>`;
+    containerAdminProfile.innerHTML = `<p><span>${adminsArray[2].photographer.slice(
+      0,
+      3
+    )}</span> ${adminsArray[2].profile}</p>`;
     break;
   }
   case "?name=Ben%20-%20L%27Administrateur": {
     adminName = "Ben - L'Administrateur";
     containerAdminName.innerHTML = `<p>${adminsArray[3].photographer}</p>`;
     containerAdminImg.innerHTML = `<img src="${adminsArray[3].imgDetailSrc}" alt="${adminsArray[3].imgDetailSrc}"/>`;
-    containerAdminProfile.innerHTML = `<p>${adminsArray[3].profile}</p>`;
+    containerAdminProfile.innerHTML = `<p><span>${adminsArray[3].photographer.slice(
+      0,
+      3
+    )}</span> ${adminsArray[3].profile}</p>`;
     break;
   }
 }
@@ -134,18 +157,12 @@ const createGalleryPhotosElement = (galleryPhoto) => {
     containerAdminName.classList.add("off");
     containerAdminProfile.classList.add("off");
     containerGallery.classList.add("off");
-    const galleryDetail = containerGalleryDetail.querySelector("div");
-    galleryDetail.innerHTML = `
-        <img src="${galleryPhoto.picture}" />
-        <p> ${galleryPhoto.picture.italics()} </p>
-        <div class="container-button">
-          <button class="button button-detail">Détail</button>
-          <button class="button button-back">Retour</button>
-        </div>
-        `;
+
+    galleryDetailName.innerHTML = `${galleryPhoto.picture.italics()}`;
+    galleryDetail.innerHTML = `<img src="${galleryPhoto.picture}" />`;
+
     body.classList.add("remove-scrolling");
-    const buttonDetail = galleryDetail.querySelector(".button-detail");
-    const buttonBack = galleryDetail.querySelector(".button-back");
+
     buttonDetail.addEventListener("click", (event) => {
       event.stopPropagation();
       if (homePhotoId) {
@@ -154,12 +171,13 @@ const createGalleryPhotosElement = (galleryPhoto) => {
         location.assign(`./admindetail.html?name=${adminName}`);
       }
     });
+
     buttonBack.addEventListener("click", (event) => {
       event.stopPropagation();
       containerGalleryDetail.classList.add("off");
       containerAdminImg.classList.remove("off");
       containerAdminName.classList.remove("off");
-      containerAdminProfile.classList.remove("noff");
+      containerAdminProfile.classList.remove("off");
       containerGallery.classList.remove("off");
       body.classList.remove("remove-scrolling");
     });

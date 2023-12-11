@@ -1,7 +1,6 @@
-import { async } from "regenerator-runtime";
-import { homePhotosArray } from "./assets/javascripts/home-photos.js";
 import "./assets/sass/styles.scss";
 import "./index.scss";
+import { homePhotosArray } from "./assets/javascripts/link.js";
 
 const photosContainer = document.querySelector("#photos-container");
 const categoriesMenu = document.querySelector("#categories-menu");
