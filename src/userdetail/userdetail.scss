@@ -1,14 +1,33 @@
+@use "../assets/sass/partials/media-queries" as *;
+
 .header-nav {
   padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 #container-user-detail {
+  min-width: 40rem;
   margin-top: 25rem;
   margin-bottom: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: var(--shadow);
+  @include phone {
+    width: 30rem;
+  }
+  @include tablet {
+    width: 50rem;
+  }
+  @include laptop {
+    width: 60rem;
+  }
+  @include computer {
+    width: 70rem;
+  }
 }
 
 #container-user-name {
@@ -16,13 +35,12 @@
 }
 
 #container-user-img {
-  margin-bottom: 3rem;
-  padding: 0.5rem;
-  box-shadow: var(--shadow);
   img {
     height: 20rem;
     width: 20rem;
-    margin-bottom: -0.4rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
   }
 }
 
@@ -31,6 +49,12 @@
   width: 40rem;
   margin-top: 2rem;
   margin-bottom: 8rem;
+  @include phone {
+    width: 30rem;
+  }
+  @include tablet {
+    width: 35rem;
+  }
   p span {
     color: var(--primary);
     font-weight: bold;
@@ -74,11 +98,21 @@
 .mode-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @include phone {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .mode-flex {
   display: flex;
   justify-content: center;
+}
+
+#container-gallery-detail {
+  padding-bottom: 3rem;
 }
 
 .fieldset-detail {

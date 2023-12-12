@@ -3,6 +3,7 @@
 }
 
 .container-photo-detail {
+  min-width: 35rem;
   margin-top: 25rem;
   margin-bottom: 25rem;
   display: flex;
@@ -21,6 +22,8 @@
     margin-bottom: 5rem;
     padding: 0.5rem;
     box-shadow: var(--shadow);
+    margin-left: 1rem;
+    margin-right: 1rem;
     img {
       margin-bottom: -0.4rem;
     }

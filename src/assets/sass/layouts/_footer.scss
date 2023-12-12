@@ -1,25 +1,26 @@
 footer {
   grid-area: footer;
-  padding: 2rem;
-  height: 8rem;
-  background-color: var(--dark);
+  height: 13rem;
+  background-color: var(--footer);
   color: var(--light);
+  font-size: 1.1rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  letter-spacing: 0.15rem;
   img {
-    height: 2rem;
-    width: 2rem;
+    height: 1.6rem;
+    width: 1.6rem;
     margin-bottom: -0.1rem;
   }
   .j {
     font-family: var(--logo);
-    color: var(--danger);
+    color: var(--je);
   }
 
   .e {
     font-family: var(--logo);
-    color: var(--danger);
+    color: var(--je);
   }
 }

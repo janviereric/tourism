@@ -802,7 +802,7 @@ const createGalleryPhotos = () => {
   const listGalleryPhotos = containerGallery.querySelector("ul");
   listGalleryPhotos.innerHTML = "";
   listGalleryPhotos.append(...galleryPhotosElement);
-  if (galleryPhotosElement.length >= 5) {
+  if (galleryPhotosElement.length >= 4) {
     listGalleryPhotos.classList.add("mode-grid");
   } else {
     listGalleryPhotos.classList.add("mode-flex");
